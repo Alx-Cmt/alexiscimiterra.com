@@ -395,6 +395,7 @@
 @media(max-width: 991px){
     .heros, .heros3{
         overflow-y: auto;
+        height: 100vh;
     }
     h1{
         letter-spacing: 0;
