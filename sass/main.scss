@@ -1,0 +1,414 @@
+@use "mixins" as m;
+@use "variables" as v;
+@use "reset";
+@use "typo";
+
+
+// HEROS 1 //
+.heros{
+    
+    display: flex;
+    .a-propos1{
+        flex-basis: 70%;
+        transform: translateX(-1000px);
+        transition: transform 0.4s ease-out;
+        background-color: v.$color-one;
+        .container-fluid{
+            width: 85%;
+            padding:3rem 9rem;
+            margin: 0; 
+        }
+    }
+    .a-propos2{
+        background-color: rgba(v.$color-two, 0.9);
+        display: flex;
+        flex-basis: 30%;
+        transform: translateX(1000px);
+        transition: transform 0.4s ease-out;
+        .container-fluid{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding:2rem 1rem;
+            margin: 0;  
+        }
+    }
+
+    .block-photo{
+        display: flex;
+        justify-content: center;
+        .cadre{
+            display: flex;
+            flex-basis: 50%;
+        }
+        img{
+            border-radius: 10px;
+        }
+    }
+    
+    .block-info{
+        ul{
+            margin:0rem;
+            padding-bottom: 0.2rem;
+            padding-left:1rem;
+        }
+
+        .info{
+            display: flex;
+            padding-bottom: 0.5rem;
+        }
+        .date{
+            min-width: 12rem;
+        }
+
+    }
+     @media (max-width: 1400px){
+        .a-propos1{
+            .container-fluid{
+                width: 100%;
+                padding:3rem 8rem 3rem 5rem;
+            }
+        }
+        .cadre{
+            min-width: 60%;
+        }
+     }
+
+     @media (max-width: 1199px){
+        .a-propos1{
+            flex-basis: 70%;
+        }
+        .a-propos2{
+            flex-basis: 40%;
+        }
+        .block-info{
+            .date{
+                min-width: 10rem;
+            }
+        }
+    } 
+
+    @media (max-width: 991px){
+        flex-direction: column;
+        .a-propos1{
+            .container-fluid{
+                padding:3rem 3rem;
+            }
+
+        }
+        .a-propos2{
+           .container-fluid{
+                padding:3rem 3rem;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+           }
+           .block-photo{
+                flex-basis: 35%;
+                align-items: center;
+                .cadre{
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .a-propos1{
+            display: flex;
+            justify-content: center;  
+        }
+        .a-propos2{
+            .container-fluid{
+                flex-direction: column;
+            }
+            .block-info{   
+                display: flex; 
+                justify-content: center;
+            }
+            .block-photo .cadre{
+                padding-bottom: 2rem;
+                flex-basis: 50%;
+            } 
+        } 
+    }
+}
+
+.heros:target .a-propos2 {
+    transform: translateX(0px);
+    pointer-events: all;
+}
+.heros:target .a-propos1 {
+    transform: translateX(0px);
+    pointer-events: all;
+}
+.heros:target .alex {
+    color: v.$color-one;
+    background-color:v.$color-two;
+}
+
+
+
+//HEROS2//
+.heros2{
+    .projet1{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        transform: translateY(-1000px);
+        transition: transform 0.4s ease-out;
+        background-color: v.$color-one;
+        .container2{
+            width: 85%;
+            padding: 3rem 0rem;
+        }
+        h1{
+            padding:1rem 0rem;
+        }
+        
+    }
+    .projet2{
+        display: flex;
+        justify-content: center;
+        height: 50%;
+        transform: translateX(2500px);
+        transition: transform 0.4s ease-out;
+        background-color: v.$color-two;
+        .container2{
+            width: 95%;;
+            display: flex;
+            justify-content: center;
+        }
+        .carousel {
+            scrollbar-width: none;
+            display: flex;
+            overflow-x: scroll;
+            width:100%;
+            gap: 3.2rem;
+            scroll-snap-type: x mandatory;
+            align-items:center;
+        }
+        .carte {
+            display: flex;
+            scroll-snap-align: start;
+            flex:0 0 22%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            background-color: v.$color-one;
+            border-radius: 10px;
+            padding: 1rem;
+            height:auto;
+            min-height: 26rem;
+            text-decoration: none;
+            z-index: 2;
+            transition: all 0.4s ease;
+            .screencapture{
+                width: 70%;
+                min-width: 70%;
+            }
+            .descriptioncard{
+                text-align: center;
+            }
+            img{
+                border-radius: 10px;
+                border: 5px solid v.$color-two;
+            }
+            &:hover{
+                transform: translateY(-0.8rem);
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.432);
+                filter: brightness(0.9);
+            }
+        }
+    }
+    @media (max-width: 1400px){
+        .projet2{
+            .carte{
+                flex: 0 0 25%;
+            }
+        }
+    }
+    @media (max-width: 1199px){
+        .projet2{
+            .carte{
+                flex: 0 0 30%;
+            }
+        }
+    } 
+     @media (max-width: 991px) {
+        flex-direction: column;
+        .projet1{
+            height: 45%;
+        }
+        .projet2 {
+            height: 55%;
+            .carte {
+                flex: 0 0 45%;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .projet2 {
+            .carte {
+                flex: 0 0 100%;
+            }
+            .carousel{
+                width:60%;
+                justify-content:flex-start; 
+            }
+        }
+    }
+}
+.heros2:target .projet2 { //Declenche la target des que l'id de la div devant :target est dans l'url, en gros les parametre de la div servent a lier la target 
+    transform: translateY(0px);
+    pointer-events: all;
+}
+.heros2:target .projet1 {
+    transform: translateY(0px);
+    pointer-events: all;
+}
+.heros2:target .projet {
+    color: v.$color-one;
+    background-color:v.$color-two;
+}
+
+
+//HEROS3//
+.heros3{
+
+    .contact1{
+        transform: translateY(-1000px);
+        transition: transform 0.4s ease-out;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        .container2{
+            width:85%;
+            padding: 3rem 0rem;
+            text-align: right;
+        }
+
+        .buttons{
+            justify-content: flex-end;
+        }
+    }
+
+    .contact2{
+        transform: translateX(1800px);
+        transition: transform 0.4s ease-out;
+        
+        .btn{
+            @include m.btn(v.$color-one, v.$color-two);
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+        .mail{
+            background-color: v.$color-two;
+            border-radius: 15px;
+            flex-basis: 35%;
+            padding: 1rem;
+            .mail-wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        .names{
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            input{
+                width: 48%;
+            }
+        }
+        .box{
+            height: 3rem;
+            border-radius: 10px;
+            background-color: v.$color-five;
+            border: 0px;
+            font-family: 'ClashDisplay-Regular';
+            padding-left: 1rem;
+
+        }
+        .text-area{
+            height: 15rem;
+        }
+
+        .social{
+            flex-basis: 30%;
+            border-radius: 15px;
+            background-color: v.$color-two;
+            padding: 1rem;
+            .last-wrapper{
+                gap: 1rem;
+                display: flex;
+                background-color: #f6cdc9;
+                border-radius: 15px;
+                padding:1rem;
+                .pastille{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .social-wrapper{
+            display: flex;
+            align-items: center; 
+            border-bottom: 1px solid v.$color-five;;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            .social-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding: 0.5rem 0rem;
+            }
+            i{
+                border-radius: 60%;
+                background-color: v.$color-five;
+                padding: 1.3rem;
+                margin-right: 1rem;
+                color:v.$color-two;
+            }
+            .social-link{
+                align-self: center;
+                margin-left: auto; // En flex "absorbe" tout lespace vide restant pour le mettre a la gauche 
+            }
+        } 
+    }
+}
+.heros3:target .contact1 {
+    transform: translateY(0px);
+    pointer-events: all;
+}
+.heros3:target .contact2 {
+    transform: translateY(0px);
+    pointer-events: all;
+}
+.heros3:target .contact {
+    color: v.$color-one;
+    background-color:v.$color-two;
+}
+
+@media(max-width: 991px){
+    .heros, .heros3{
+        overflow-y: auto;
+    }
+    h1{
+        letter-spacing: 0;
+    }
+    .heros3 .contact2{
+        .container2{
+            flex-wrap: wrap;
+        }
+        .mail, .social{ 
+            flex-basis: 70%;
+        }
+    }
+}
+
+//:target = style un element quand son id est dans l'URL
+//:has() = style un element selon ce qu'il contient
+//:has() et :target = style n'importe quel element de la page selon quelle section est active, :target "dort" tant que son id n'est pas dans l'URL (C'est pour ca que overflow: visible n'est pas tout le temps actif)

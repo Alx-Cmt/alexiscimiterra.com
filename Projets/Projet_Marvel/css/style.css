@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+     font-family: "Roboto", sans-serif;
+     }
+
+
+
+header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    top:0;
+    left:0;
+    right:0;
+    background-color: rgb(241, 52, 52);
+    height: 60px;
+    width: 100%;
+}
+
+
+
+.marvel{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'bebas_neueregular';
+    padding-left: 100px;
+    font-weight: bold;
+}
+
+.universe{
+    color: rgb(243, 243, 243);
+    font-size: 40px;
+    font-family: 'bebas_neueregular';
+    margin-bottom: 32px;
+   }
+
+.marveluniverse{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    padding-right: 100px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+.btn2{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+.btn2:hover{
+    color: white;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.txtbackground{
+    padding: 11%;
+    background: linear-gradient(to bottom,transparent,whitesmoke),url('../img/texture.jpeg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat
+}
+
+.whitebackground{
+
+    background-color: whitesmoke;
+    padding: 200px 150px 0px 150px;
+}
+
+#discover{
+    color: rgb(241, 52, 52);
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    padding: 13px;
+    font-size: 80px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0px 0px 0px -110px;
+    box-shadow: #423f3fd9 20px 20px 20px;
+}
+
+#become{
+color: whitesmoke;
+  border: 1px solid rgb(241, 52, 52);
+  background-color: rgb(241, 52, 52);
+  padding: 5px;
+  font-size: 35px;
+  display: inline-block;
+  margin: 0px 0px 0px -110px;
+  font-weight: bold;
+  box-shadow: #464646fc 20px 20px 40px;
+}
+
+#personnages{
+    display: flex;
+}
+
+figure{
+  scale: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+
+#char{
+    font-family: 'bebas_neueregular';
+    font-size: 70px;
+    color: rgb(241, 52, 52);
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    font-weight:bold;
+    }
+
+.herosname{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 25px;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.herosdescription{
+    text-align: center;
+    margin: 0;
+    padding-top: 17px;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.btn{
+    color: rgb(241, 52, 52);
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid rgb(241, 52, 52);
+    border-radius: 8px;
+    background-color: whitesmoke;
+    padding: 8px 15px 8px 15px;
+}
+
+.btn:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    background-color: rgb(241, 52, 52);
+}
+
+
+.videocont{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 1200px;
+    position: relative;
+    background: linear-gradient(
+    to bottom,
+    #F13434 57%,    
+    rgba(229,9,20,0) 100%)
+}
+.videocont video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#cinéma{
+    display: flex;
+    display: flex;
+    padding: 0px 150px 0px 150px;
+}
+ #adaptation{
+    font-family: 'bebas_neueregular';
+  font-size: 65px;
+  color: whitesmoke;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding: 120px 0px 20px 0px;
+
+}
+
+iframe{
+    scale: 0.7;
+}
+
+.trailername{
+    font-size: 25px;
+    color: whitesmoke;
+    margin: 80px 0px 0px -75px;
+    font-weight: bold;
+}
+
+.trailerdescription{
+    color: whitesmoke;
+  margin: 25px -70px 0px -75px;
+  font-size: 22px;
+}
+
+#adaptation2{
+     font-family: 'bebas_neueregular';
+  font-size: 65px;
+  color: whitesmoke;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding: 120px 0px 45px 0px;
+}
+
+.movietable{
+    border: 6px solid rgb(241, 52, 52);
+  width: 40%;
+  margin: 40px auto;
+  background-color: whitesmoke;
+}
+
+.movietable th{
+    font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  border-bottom: 1px solid red;
+}
+
+.movietable td{
+
+    padding: 6px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.whitebackground2{
+    background-color: whitesmoke;
+    padding: 80px 150px 0px 150px;
+
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px; 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.formulaire{
+    width: 55%;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+#contact2{
+    text-align: center;
+  width: 100%;
+  font-weight: bold;
+  color: rgb(241, 52, 52);
+  font-family: 'bebas_neueregular';
+  font-size: 60px;
+  margin: 40px 0px -40px 0px;
+}
+
+#contact3{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(241, 52, 52);
+    font-family: 'bebas_neueregular';
+    font-size: 60px;
+    margin: 40px 0px 20px 0px;
+}
+
+.ligne{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label{
+margin-bottom: 5px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px;
+}
+.btn3{
+    text-align: center;
+    color: rgb(241, 52, 52);
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid rgb(241, 52, 52);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 8px 16px 8px 16px;
+    margin: 15px -1px 0px -1px ;
+}
+
+.btn3:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    background-color: rgb(241, 52, 52);
+}
+
+footer{
+    display: flex;
+    align-items: center; 
+    top:0;
+    left:0;
+    right:0;
+    background-color: rgb(241, 52, 52);
+    height: 70px;
+    width: 100%;
+}
+
+#copyright{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding-left: 100px;
+
+}
+
+.fblogo{
+    width: 30px;
+    height:auto;
+    padding:5px;
+}
+.ytlogo{
+    width: 30px;
+    height: auto;
+    padding:5px;
+}
+.twlogo{
+    width: 30px;
+    height: auto;
+    padding:5px;
+}
+
+.social ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.social{
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.ytlogo:hover{
+    width: 50px;
+    height: auto;
+    padding:5px;
+}
+
+.twlogo:hover{
+    width: 50px;
+    height: auto;
+    padding:5px;
+}
+
+.fblogo:hover{
+     width: 50px;
+    height: auto;
+    padding:5px;
+}
+
+
+
+
+
+
+
+

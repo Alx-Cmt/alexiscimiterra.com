@@ -1,0 +1,410 @@
+header{
+    background-color: #212d39d2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+body{
+    font-family: "Kreon", serif;
+    
+}
+
+header ul{
+    font-size: 0.9rem;
+}
+
+header .navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+body{
+    background-image: 
+        url(../img/pexels-photo-132694.jpeg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background2{
+    background-image: 
+        url(../img/kitchen-cake-backe-backing.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 12vh;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #3e2c0a;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 4vh;
+    color:#3e2c0a;
+    background-color: whitesmoke;
+    padding:0 1rem 0rem 1rem;
+}
+
+.arrow{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar-item:hover{
+    background-color: #3e2c0a;
+}
+
+.navbar-item{
+    transition: all 0.5s;
+}
+
+.nav-link.active{
+    background-color: #3e2c0a;
+}
+
+
+/* PART 1 (Qui somme nous?)*/
+
+.about {
+  display: flex; 
+  justify-content: center;
+  padding: 5rem 0rem 5rem 0rem;
+  background: #fff;
+}
+
+.about .container {
+  text-align: center;
+}
+
+.about .icons {
+  display: flex;
+  flex-basis:33%;
+  padding-top: 5rem;
+  gap: 20px;
+}
+
+.about i{
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom:0.5rem;
+}
+
+.about h3{
+    font-size: 1.2rem;
+}
+.about h2{
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: bold;
+    padding-top: 1rem;
+}
+/* A UTILISER POUR LES AUTRE TITRES*/
+.about .text > p.text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #3e2c0a;
+    padding-bottom: 1.5rem;
+    display: inline;
+}
+
+@media (max-width: 575px) {
+  .about .icons {
+    flex-basis: 80%;
+    flex-wrap: wrap;
+  }
+}
+
+
+/*PART 2 (Les icones) bootstrap*/
+
+.foodicon .icon{
+    max-width: 300px;
+    text-align: center;
+}
+.foodicon .icon >i{
+    color: #fff;
+    font-size: 3rem;
+    transition:all 0.5s;
+}
+.icon .coffee:hover{
+    color: #744405;
+}
+.icon .heart:hover{
+    color: #f51919;
+}
+.icon .fork:hover{
+    color: #757575;
+}
+.icon .ppl:hover{
+    color: #19d4f5;
+}
+
+.foodicon .icon>i:hover{
+    animation-name: beating;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.foodicon .icon >h3{
+    color: #fff;
+    background-color: transparent;
+    border: 0px
+}
+
+.foodicon .icon >p{
+    color: #fff;
+}
+
+.foodicon{
+    padding: 5rem 0rem;
+}
+
+/*PART 3 (La carte) Bootstrap*/
+.carte{
+    background-color: #fff;
+}
+
+.carte p{
+    margin: 0;
+}
+
+.carte h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 5rem;
+}
+
+.carte .text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #3e2c0a;
+    padding-bottom: 1.5rem;
+    display: inline;
+}
+
+.carte .foods{
+    padding-top:5rem;
+
+}
+
+/*PART 4 (Le menu)*/
+
+ .background3{
+    background-image: url(../img/pexels-photo-24553.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+}
+.background3 .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background3 .cadre{
+    width: auto;       
+    width: auto;       
+    max-width: 18rem;  
+}
+
+.cadre img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.cadre figcaption {
+  position: absolute;
+  top: -20px;
+  left: -30px;
+  font-size: 1.5rem;
+  border:4px solid white;
+  border-radius: 50%;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cadre .brown figcaption{
+    background-color: #3e2c0a;
+}
+
+.cadre .blue figcaption {
+  background-color: #09c6ff; 
+}
+
+.cadre .green figcaption {
+  background-color: #1aff12;
+}
+
+.cadre {
+  position: relative;
+}
+
+.menu-text{
+    flex-basis: 50%;
+    max-width: 20rem;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+.menuitem {
+    display: flex;          
+    flex-wrap: wrap;
+    padding-top: 5rem;        
+}
+
+.background3 figure {
+    display: flex;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+.menusection h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 5rem;
+    color: #fff;
+}
+
+.menusection .text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #3e2c0a;
+    padding-bottom: 1.5rem;
+    display: inline;
+    color: #fff;
+}
+
+.btninfos{
+    border: 3px solid rgb(201, 42, 42);
+    background-color: rgb(201, 42, 42);
+    color: #fff;
+    border-radius: 2px;
+    display: inline;
+    padding:0rem 0.5rem 0rem 0.5rem;
+    transition:all 0.5s;
+    text-decoration: none;
+}
+
+.background3 img{
+    border:5px solid white;
+}
+
+@media (max-width: 991px) {
+    
+    .menu-text{
+        max-width: 25rem;
+        flex-basis: 70%;
+    }
+
+}
+
+
+/*PART 5 (La reservation)*/
+
+.booking{
+    background-color: #fff;
+}
+
+.booking h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 5rem;
+}
+
+.booking p.text{
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #3e2c0a;
+    padding-bottom: 0.5rem;
+    display: inline;
+}
+
+.booking .block{
+    padding-top: 5rem;
+}
+
+.booking .btninfos{
+    border: 3px solid rgb(201, 42, 42);
+    background-color: rgb(201, 42, 42);
+    color: #fff;
+    border-radius: 2px;
+    display: inline;
+    padding:0rem 0.5rem 0rem 0.5rem;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.booking .formulaire{
+    padding-bottom:7rem;
+}
+
+.booking .intro{
+    font-size: 0.9rem;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #3e2c0a;
+    padding: 3rem;
+}
+
+footer .container{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .iconfeet{
+    display: flex;
+    color: #fff;
+    gap: 10px;
+}
+
+footer .copyright{
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 575px) {
+    
+    footer .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.btninfos:hover{
+    color: rgb(201, 42, 42);
+    background-color: white;
+    border-color: white;
+}
+
+@keyframes beating {
+    0%{
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.1)
+    }
+}
+
+    
+
+
+
+

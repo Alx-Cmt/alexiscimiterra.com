@@ -1,0 +1,175 @@
+@use "variables" as v;
+@use "reset";
+@use "mixins" as m;
+
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Medium';
+  src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Bold';
+  src: url('../fonts/ClashDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashDisplay-Semibold';
+  src: url('../fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+       url('../fonts/ClashDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+h1{
+    font-family: 'ClashDisplay-Bold';
+    color: v.$color-two;
+    font-size: clamp(5rem, 10vw, 11rem);
+    text-transform: uppercase;
+    opacity: 0.8;
+    line-height: 0.7;
+    letter-spacing: 0.3rem;
+}
+
+h4{
+    font-family: 'ClashDisplay-Regular'; 
+    text-transform: uppercase;
+    opacity: 0.8;
+    color: v.$color-two;
+    margin:0;
+    font-size: clamp(0.5rem, 3vw, 2rem);
+}
+
+.heros{
+    h5{
+        margin: 2rem 0rem 1rem 0rem;
+        color: v.$color-three;
+        font-family: 'ClashDisplay-Regular';
+        font-style: italic;
+        font-size: clamp(0.9rem, 1vw, 1.5rem);
+        line-height: 1.3;
+    }
+
+    .block-info{
+        h2{
+            font-family: 'ClashDisplay-Semibold';
+            color: v.$color-one;
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            margin:0rem;
+        }
+        h3{
+            font-family: 'ClashDisplay-Semibold';
+            color: v.$color-four;
+            font-size: clamp(1.1rem, 1vw, 1.5rem);
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        h4{
+           color: v.$color-four;
+           font-family: 'ClashDisplay-Regular';
+           font-size: clamp(0.8rem, 1.5vw, 1rem);
+           text-transform:none;
+        }
+
+        h5{
+           color: v.$color-four;
+           font-family: 'ClashDisplay-Regular'; 
+           margin:0;
+           font-style: unset;
+           font-size: clamp(0.7rem, 1vw, 0.9rem);
+        }
+
+        .date{
+            h4{
+                margin-bottom: 0.8rem;
+            }
+        }
+
+        .icons{
+            padding-top: 0.5rem;
+            font-size: clamp(3rem, 2vw, 5rem);
+            display: flex;
+            gap:0.7rem;
+            color: v.$color-four;
+        }
+    }
+}
+
+.heros2{
+    i{
+        display: flex;
+        align-items: center;
+        color: v.$color-one;
+        font-size: clamp(2rem, 4vw, 5rem);
+        padding: 2rem;
+        @include m.beating(beat, 0.3s);
+    }
+    h3{
+        font-family: 'ClashDisplay-Medium';
+        font-size: clamp(1.5rem, 1.7vw, 1.5rem);
+        color: v.$color-two;
+        font-weight: bold;
+        margin: 0;
+    }
+    p{
+        font-family: 'ClashDisplay-Regular';
+        font-size: clamp(0.9rem, 0.9vw, 1.5rem);
+        color: v.$color-three;
+        line-height: 1;
+    }
+}
+
+.heros3{
+    h1{
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    i{
+        color: v.$color-one;
+        font-size: clamp(1.5rem, 1.5vw, 3rem);
+    }
+    h2{
+        font-family: 'ClashDisplay-bold';
+        color: v.$color-one;
+        font-size: clamp(1.2rem, 1.3vw, 3rem);
+        text-transform: uppercase;
+    }
+    h3{
+        font-family: 'ClashDisplay-Semibold';
+        color: v.$color-one;
+        font-size: clamp(1rem, 1vw, 3rem);
+        margin: 0rem;
+        text-transform: uppercase;
+    }
+    .contact2{
+        h4{
+            font-family: 'ClashDisplay-Regular';
+            color: v.$color-four;
+            font-size: clamp(0.8rem, 0.8vw, 2rem);
+            text-transform:none;
+        }
+    }
+    .pastille{
+        i{
+            color: rgb(37, 161, 37);
+            font-size: clamp(0.5rem, 0.5vw, 2rem);;
+        }  
+    }
+}
+

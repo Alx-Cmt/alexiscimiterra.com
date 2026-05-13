@@ -1,0 +1,56 @@
+@mixin centering() {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+@mixin line($color, $width, $height, $margin, $top:false, $right:false, $bottom:false, $left:false){
+    &::after{
+        position: absolute;
+        content: " ";
+        background: $color;
+        width: $width;
+        height: $height;
+        margin:$margin; 
+    
+        @if $top{
+            top: $top;
+        }
+        @if $right{
+            right: $right;
+        }
+        @if $bottom{
+            right: $bottom;
+        }
+        @if $left{
+            right: $left;
+        }
+    }
+}
+
+@mixin button($color, $bgcolor, $hcolor, $hbgcolor, $top:false, $right:false, $bottom:false, $left:false){
+    display: inline-block;
+    transition: all 0.5s;
+    background-color: $bgcolor;
+    color: $color;
+    display: flex;
+    align-items: center;
+
+    &:hover{
+        color:$hcolor;
+        background-color: $hbgcolor;
+    }
+
+    @if $top{
+        padding-top: $top;
+    }
+    @if $right{
+        padding-right: $right;
+    }
+    @if $bottom{
+        padding-bottom: $bottom;
+    }
+    @if $left{
+        padding-left: $left;
+    }
+}

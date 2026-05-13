@@ -1,0 +1,175 @@
+@mixin titresection {
+    text-transform: uppercase;
+    font-family: 'league_spartanbold';
+    border: 10px solid transparent;
+    background-color: white;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: rgba(87, 87, 87, 0.57) 6px 5px 6px;
+}
+
+@mixin petitcontour($color, $bgcolor){
+    text-transform: uppercase;
+    background-color: $color;
+    border: 2px solid transparent;
+    background-color: $bgcolor;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+@mixin hoverdark{
+    transition: all 0.5s;
+    &:hover{
+        filter:brightness(60%);
+    }
+}
+
+@mixin hover($color){
+    transition: all 0.5s;
+    &:hover{
+        color: $color;
+    }
+}
+
+@mixin centrageHV($paddingT: false, $paddingR: false, $paddingB: false, $paddingL: false){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @if $paddingT{
+        padding-top: $paddingT;
+    }
+    @if $paddingR{
+        padding-right: $paddingR;
+    }
+    @if $paddingL{
+        padding-left: $paddingL;
+    }
+    @if $paddingB{
+        padding-bottom: $paddingB;
+    }
+}
+
+@mixin centrageH($paddingT: false, $paddingR: false, $paddingB: false, $paddingL: false){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @if $paddingT{
+        padding-top: $paddingT;
+    }
+    @if $paddingR{
+        padding-right: $paddingR;
+    }
+    @if $paddingL{
+        padding-left: $paddingL;
+    }
+    @if $paddingB{
+        padding-bottom: $paddingB;
+    }
+}
+
+@mixin figparameter($x, $y, $parent, $color, $top : false, $right : false, $bottom : false , $left : false){
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translate($x,$y);
+    color: $color;
+
+    @if $top{
+        top:$top;
+    }
+    @if $right{
+        right:$right;
+    }
+    @if $bottom{
+        bottom:$bottom;
+    }
+    @if $left{
+        left:$left;
+    }
+    #{$parent}:hover & {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+@mixin animationcolor($name, $color1, $color2, $color3, $color4, $duration) {
+  @keyframes #{$name} {
+    0%   { background-color: $color1; }
+    33%  { background-color: $color2; }
+    66%  { background-color: $color3; }
+    100% { background-color: $color4; }
+  }
+
+  &:hover {
+    animation: #{$name} $duration linear forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+@mixin beating($name,$duration){
+    &:hover{
+        @keyframes #{$name}{
+        0%{
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.1)
+    }
+    }
+
+    animation:#{$name} $duration;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+}
+
+@mixin hoverbtn($basecolor,$color,$bg : false){
+    color: $basecolor;
+    &:hover{
+        background-color: $bg;
+        color: $color;
+        border-color: transparent;
+    }
+}
+
+@mixin subtitle($color, $colorborder : false){
+    margin-bottom: 2rem;
+    color:$color;
+    @if $colorborder{
+        border-bottom:1px solid black;
+    }
+}
+
+@mixin wrapper($size,$padding, $color, $borderR : false, $margin : false, $marginT : false, $marginR : false, $marginL : false, $marginB : false,){
+    flex-basis: $size;
+    margin: $margin;
+    padding: $padding;
+    background-color: $color;
+    flex-wrap: wrap;
+
+    @if $borderR{
+        border-radius: $borderR;
+    }
+    @if $margin{
+        margin:$margin;
+    }
+    @if $marginT{
+        margin-top: $marginT;
+    }
+    @if $marginR{
+        margin-right: $marginR;
+    }
+    @if $marginL{
+        margin-left: $marginL;
+    }
+    @if $marginB{
+        margin-bottom: $marginB;
+    }
+}

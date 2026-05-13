@@ -1,0 +1,42 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    // Rédéfinir la taille par défaut d'1 rem à 10px plutôt que 16px
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+h2,h4{
+    margin: 0;
+}
+
+h5{
+    font-weight: 0;
+    font-size: 1.5rem;
+}
+pre code {
+    display: block;
+    padding-left: 0;
+}
+
+pre {
+    font-weight: bold;
+}
+
+table{
+    overflow: hidden;
+}

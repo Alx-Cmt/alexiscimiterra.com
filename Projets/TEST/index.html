@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' />
+    <title>My mtg</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="css/mana.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#menu" data-bs-offset="120">
+
+    <header>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                
+                <a href="#"><i class="ms ms-planeswalker logo"></i></a>
+                <a class="navbar-brand" href="#">MTG Decks</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="menu" aria-expanded="false" aria-label="Afficher le menu de navigation">
+                    <span class="navbar-toggler-icon"></span>               
+                </button>
+                
+                <div id="navbarContent" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="navlink" href="#commander">Commanders</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!--Banniere-->
+        <div class="banner">
+            <div class="banner-title">
+                <h1>MTG decks</h1>
+            </div>
+        </div>
+        
+        <div class="bottom text-center">
+            <a class="icon" href="#commander"><i class="fa-solid fa-caret-down"></i></a>
+        </div>
+    </header>
+    
+
+    <main>
+        <!--SECTION COMMANDERS-->
+        <div id="commander" class="parallax">
+            <div class="container inner">
+                <h2 class="section-title text-center">Commanders</h2>
+                <div class="commanders row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="col-wrapper">
+                            <figure class="frame">
+                                <a href="#wort">
+                                    <img class="w-100" src="img/Wort.png" alt="">
+                                </a>
+                                <figcaption>
+                                    <i class="ms ms-b mana"></i>
+                                    <i class="ms ms-r mana manaR"></i>
+                                </figcaption>
+                            </figure>
+                            <div class="commander-title">
+                                <h3>Wort, Boggart Auntie</h3>
+                            </div>
+                            <div class="commander-descr">
+                                <p>Fear (This creature can’t be blocked except by artifact creatures and/or black creatures.)
+                                At the beginning of your upkeep, you may return target Goblin card from your graveyard to your hand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="col-wrapper">
+                            <figure class="frame">
+                                <a href="#meren">
+                                    <img class="w-100" src="img/Meren.png" alt="">
+                                </a>
+                                <figcaption>
+                                    <i class="ms ms-b mana"></i>
+                                    <i class="ms ms-g mana manaG"></i>
+                                </figcaption>
+                            </figure>
+                            <div class="commander-title">
+                                <h3>Meren of Clan Nel Toth</h3>
+                            </div>
+                            <div class="commander-descr">
+                                <p>Whenever another creature you control dies, you get an experience counter.
+                                At the beginning of your end step, choose target creature card in your graveyard. 
+                                If that card’s mana value is less than or equal to the number of experience counters you have, 
+                                return it to the battlefield. Otherwise, put it into your hand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="col-wrapper">
+                            <figure class="frame">
+                                <a href="#anowon">
+                                    <img class="w-100" src="img/Anowon.png" alt="">
+                                </a>
+                                <figcaption>
+                                    <i class="ms ms-b mana"></i>
+                                    <i class="ms ms-u mana manaBl"></i>
+                                </figcaption>
+                            </figure>
+                            <div class="commander-title">
+                                <h3>Anowon, the Ruin Thief</h3>
+                            </div>
+                            <div class="commander-descr">
+                                <p>Other Rogues you control get +1/+1.
+                                Whenever one or more Rogues you control deal combat damage to a player, 
+                                that player mills a card for each 1 damage dealt to them. 
+                                If the player mills at least one creature card this way, you draw a card.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--SECTION The rot farm-->
+        <div id="wort" class="parallax2 commander1">
+            <div class="container-fluid inner">
+                <div class="section-title text-center">
+                    <h2>The Rot farm</h2>
+                </div>
+                <div class="cardcommander-wrapper row">
+                    <div class="commander-wrapper col-sm-12 col-md-12 col-lg-4 text-center">
+                        <img src="img/a08a1377-dede-47c8-8447-c9df125f3b14-359236965.jpg" alt="">
+                    </div>
+                    <div class="card-list col-sm-12 col-lg-6">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="crea-tab" data-bs-toggle="tab" data-bs-target="#crea-tab-pane">Creatures</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="sorc-tab" data-bs-toggle="tab" data-bs-target="#sorc-tab-pane">Sorcery</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="inst-tab" data-bs-toggle="tab" data-bs-target="#inst-tab-pane">Instants</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="arti-tab" data-bs-toggle="tab" data-bs-target="#arti-tab-pane">Artifacts</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ench-tab" data-bs-toggle="tab" data-bs-target="#ench-tab-pane">Enchantements</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="land-tab" data-bs-toggle="tab" data-bs-target="#land-tab-pane">Lands</button>
+                            </li> 
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="crea-tab-pane" role="tabpanel" tabindex="0" >
+                                <div class="row">
+                                    <div class="col-sm col-md col-lg-4 cards1">
+                                        <ul>
+                                            <li>1xBeetleback Chief</li>
+                                            <li>1xBoggart Cursecrafter</li>
+                                            <li>1xBoggart Harbinger</li>
+                                            <li>1xConspicuous Snoop</li>
+                                            <li>1xDropkick Bomber</li>
+                                            <li>1xEclipsed Boggart</li>
+                                            <li>1xFrogtosser Banneret</li>
+                                            <li>1xGeneral Kreat, the Boltbringer</li>
+                                            <li>1xGoblin Chainwhirler</li>
+                                            <li>1xGoblin Chieftain</li>
+                                            <li>1xGoblin Gardener</li>
+                                            <li>1xGoblin King</li>
+                                            <li>1xGoblin Lackey</li>
+                                            <li>1xGoblin Matron</li>
+                                            <li>1xGoblin Piledriver</li>
+                                        </ul>
+                                    </div>
+                               
+                                    <div class="col-sm col-md col-lg-4 cards">
+                                        <ul>
+                                            <li>1xGoblin Recruiter</li>
+                                            <li>1xGoblin Ringleader</li>
+                                            <li>1xGoblin Settler</li>
+                                            <li>1xGoblin Warchief</li>
+                                            <li>1xGrub, Storied Matriarch</li>
+                                            <li>1xHexing Squelcher</li>
+                                            <li>1xHobgoblin Bandit Lord</l>
+                                            <li>1xHowlsquad Heavy</li>
+                                            <li>1xKrenko, Mob Boss</li>
+                                            <li>1xMad Auntie</li>
+                                            <li>1xMoggcatcher</li>
+                                            <li>1xMogg Maniac</li>
+                                            <li>1xMunitions Expert</li>
+                                            <li>1xMuxus, Goblin Grandee</li>
+                                            <li>1xPashalik Mons</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-sm col-md col-lg-4 cards">
+                                        <ul>
+                                            <li>1xRummaging Goblin</li>
+                                            <li>1xSiege-Gang Commander</li>
+                                            <li>1xSkirk Prospector</li>
+                                            <li>1xSling-Gang Lieutenant</li>
+                                            <li>1xTreasure Nabber</li>
+                                            <li>1xVillage Pillagers</li>
+                                            <li>1xWarren Instigator</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="sorc-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1xBoggart Birth Rite</li>
+                                        <li>1xGoblin Negotiation</li>
+                                        <li>1xGoblin War Strike</li>
+                                        <li>1xGrub's Command</li>
+                                        <li>1xMogg Infestation</li>
+                                        <li>1xRelentless Assault</li>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="inst-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                   <ul>
+                                        <li>1xBrightstone Ritual</li>
+                                        <li>1xUnbury</li>
+                                   </ul> 
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="arti-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1xChromatic Lantern</li>
+                                        <li>1xDawn-Blessed Pennant</li>
+                                        <li>1xDolmen Gate</li>
+                                        <li>1xGathering Stone</li>
+                                        <li>1xMirrormind Crown</li>
+                                        <li>1xSol Ring</li>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="ench-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1xBastion of Remembrance</li>
+                                        <li>1xBoggart Mischief</li>
+                                        <li>1xBoggart Shenanigans</li>
+                                        <li>1xCover of Darkness</li>
+                                        <li>1xDescendants' Fury</li>
+                                        <li>1xDralnu's Crusade</li>
+                                        <li>1xGoblin Bombardment</li>
+                                        <li>1xGoblin War Drums</li>
+                                        <li>1xGratuitous Violence</li>
+                                        <li>1xHaunted Crossroads</li>
+                                        <li>1xInfernal Tribute</li>
+                                        <li>1xShared Animosity</li>
+                                        <li>1xWar Cadence</li>
+                                        <li>1xWar's Toll</li>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="land-tab-pane" role="tabpanel" tabindex="0">
+                                <div class="row">
+                                    <div class="col-sm col-md col-lg-4 cards1">
+                                        <ul>
+                                            <li>1xAbundant Countryside</li>
+                                            <li>1xAuntie's Hovel</li>
+                                            <li>1xBlackcleave Cliffs</li>
+                                            <li>1xBlightstep Pathway</li>
+                                            <li>1xBlood Crypt</li>
+                                            <li>1xCastle Locthwain</li>
+                                            <li>1xCommand Tower</li>
+                                            <li>1xDragonskull Summit</li>
+                                            <li>1xEclipsed Realms</li>
+                                            <li>1xExotic Orchard</li>
+                                            <li>1xForeboding Ruins</li>
+                                            <li>1xGraven Cairns</li>
+                                            <li>1xHigh Market</li>
+                                            <li>8xMountain</li>
+                                            <li>1xRakdos Carnarium</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm col-md col-lg-4 cards">
+                                        <ul>
+                                            <li>1xSecluded Courtyard</li>
+                                            <li>1xSmoldering Marsh</li>
+                                            <li>1xSulfurous Springs</li>
+                                            <li>7xSwamp</li>
+                                            <li>1xThriving Bluff</li>
+                                            <li>1xThriving Moor</li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!--SECTION STATS ROT FARM-->
+        <div id="stats" class="parallax">
+            <div class="container inner">
+                <div class="row text-center">
+
+                    <div class="col-sm">
+                        <div class="col-wrapper pt-5 pb-3">
+                            <h1 class="red">Difficulty</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm pt-5 pb-4">
+                        <div class="col-wrapper">
+                            <h1 class="red">Funfactor</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm pt-5 pb-3">
+                        <div class="col-wrapper">
+                            <h1 class="red">Cost</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--SECTION Graveyard indus-->
+        <div id="meren" class="parallax3 commander1">
+            <div class="container-fluid inner">
+                <div class="section-title text-center">
+                    <h2>The Graveyard industry</h2>
+                </div>
+                <div class="cardcommander-wrapper row">
+                    <div class="commander-wrapper col-sm-12 col-md-12 col-lg-4 text-center">
+                        <img src="img/17d6703c-ad79-457b-a1b5-c2284e363085-2587710035.jpg" alt="">
+                    </div>
+                    <div class="card-list col-sm-12 col-lg-6">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="crea-tab" data-bs-toggle="tab" data-bs-target="#crea-tab-paneG">Creatures</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="sorc-tab" data-bs-toggle="tab" data-bs-target="#sorc-tab-paneG">Sorcery</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="inst-tab" data-bs-toggle="tab" data-bs-target="#inst-tab-paneG">Instants</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="arti-tab" data-bs-toggle="tab" data-bs-target="#arti-tab-paneG">Artifacts</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ench-tab" data-bs-toggle="tab" data-bs-target="#ench-tab-paneG">Enchantements</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="land-tab" data-bs-toggle="tab" data-bs-target="#land-tab-paneG">Lands</button>
+                            </li> 
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="crea-tab-paneG" role="tabpanel" tabindex="0" >
+                                <div class="row">
+                                    <div class="col-sm col-md col-lg-4 cards1">
+                                        <ul>
+                                            <li>1x Acidic Slime</li>
+                                            <li>1x Banshee of the Dread Choir</li>
+                                            <li>1x Blood Bairn</li>
+                                            <li>1x Bloodspore Thrinax</li>
+                                            <li>1x Butcher of Malakir</li>
+                                            <li>1x Caller of the Pack</li>
+                                            <li>1x Centaur Vinecrasher</li>
+                                            <li>1x Champion of Stray Souls</li>
+                                            <li>1x Cloudthresher</li>
+                                            <li>1x Corpse Augur</li>
+                                            <li>1x Eater of Hope</li>
+                                            <li>1x Eternal Witness</li>
+                                            <li>1x Extractor Demon</li>
+                                            <li>1x Great Oak Guardian</li>
+                                            <li>1x Indrik Stomphowler</li>
+                                        </ul>
+                                    </div>
+                               
+                                    <div class="col-sm col-md col-lg-4 cards">
+                                        <ul>
+                                            <li>1x Jarad, Golgari Lich Lord</li>
+                                            <li>1x Kessig Cagebreakers</li>
+                                            <li>1x Korozda Guildmage</li>
+                                            <li>1x Lotleth Troll</li>
+                                            <li>1x Mazirek, Kraul Death Priest</li>
+                                            <li>1x Mycoloth</li>
+                                            <li>1x Pathbreaker Ibex</li>
+                                            <li>1x Phyrexian Plaguelord</li>
+                                            <li>1x Phyrexian Rager</li>
+                                            <li>1x Sakura-Tribe Elder</li>
+                                            <li>1x Satyr Wayfinder</li>
+                                            <li>1x Scourge of Nel Toth</li>
+                                            <li>1x Shriekmaw</li>
+                                            <li>1x Skullwinder</li>
+                                            <li>1x Terastodon</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-sm col-md col-lg-4 cards">
+                                        <ul>
+                                            <li>1x Thief of Blood</li>
+                                            <li>1x Verdant Force</li>
+                                            <li>1x Viridian Emissary</li>
+                                            <li>1x Viridian Zealot</li>
+                                            <li>1x Vulturous Zombie</li>
+                                            <li>1x Wall of Blossoms</li>
+                                            <li>1x Wood Elves</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="sorc-tab-paneG" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1x Ambition's Cost</li>
+                                        <li>1x Barter in Blood</li>
+                                        <li>1x Dread Summons</li>
+                                        <li>1x Mulch</li>
+                                        <li>1x Overwhelming Stampede</li>
+                                        <li>1x Primal Growth</li>
+                                        <li>1x Rise from the Grave</li>
+                                        <li>1x Sever the Bloodline</li>
+                                        <li>1x Spider Spawning</li>
+                                        <li>1x Victimize</li>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="inst-tab-paneG" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                   <ul>
+                                        <li>1x Altar's Reap</li>
+                                        <li>1x Golgari Charm</li>
+                                        <li>1x Grisly Salvage</li>
+                                        <li>1x Putrefy</li>
+                                        <li>1x Tribute to the Wild</li>
+                                        <li>1x Wretched Confluence</li>
+                                   </ul> 
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="arti-tab-paneG" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1x Bonehoard</li>
+                                        <li>1x Eldrazi Monument</li>
+                                        <li>1x Golgari Signet</li>
+                                        <li>1x Lightning Greaves</li>
+                                        <li>1x Skullclamp</li>
+                                        <li>1x Sol Ring</li>
+                                        <li>1x Thought Vessel</li>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="ench-tab-paneG" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>Diabolic Servitude</li>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="land-tab-paneG" role="tabpanel" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 cards1">
+                                        <ul>
+                                            <li>1x Command Tower</li>
+                                            <li>1x Evolving Wilds</li>
+                                            <li>12x Forest</li>
+                                            <li>1x Golgari Guildgate</li>
+                                            <li>1x Golgari Rot Farm</li>
+                                            <li>1x Grim Backwoods</li>
+                                            <li>1x High Market</li>
+                                            <li>1x Jungle Hollow</li>
+                                            <li>1x Polluted Mire</li>
+                                            <li>1x Slippery Karst</li>
+                                            <li>13x Swamp</li>
+                                            <li>1x Tainted Wood</li>
+                                            <li>1x Terramorphic Expanse</li>
+                                            <li>1x Vivid Grove</li>
+                                            <li>1x Vivid Marsh</li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+        <!--SECTION STATS Graveyard-->
+        <div id="stats" class="parallax">
+            <div class="container inner">
+                <div class="row text-center">
+
+                    <div class="col-sm">
+                        <div class="col-wrapper pt-5 pb-3">
+                            <h1 class="green">Difficulty</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm pt-5 pb-4">
+                        <div class="col-wrapper">
+                            <h1 class="green">Funfactor</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm pt-5 pb-3">
+                        <div class="col-wrapper">
+                            <h1 class="green">Cost</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Section mill farm-->
+        <div id="anowon" class="parallax4 commander1">
+            <div class="container-fluid inner">
+                <div class="section-title text-center">
+                    <h2>The Mill Farm</h2>
+                </div>
+                <div class="cardcommander-wrapper row">
+                    <div class="commander-wrapper col-sm-12 col-md-12 col-lg-4 text-center">
+                        <img src="img/223738-66278773.jpg" alt="">
+                    </div>
+                    <div class="card-list col-sm-12 col-lg-6">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="crea-tab" data-bs-toggle="tab" data-bs-target="#crea-tab-paneB">Creatures</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="sorc-tab" data-bs-toggle="tab" data-bs-target="#sorc-tab-paneB">Sorcery</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="inst-tab" data-bs-toggle="tab" data-bs-target="#inst-tab-paneB">Instants</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="arti-tab" data-bs-toggle="tab" data-bs-target="#arti-tab-paneB">Artifacts</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ench-tab" data-bs-toggle="tab" data-bs-target="#ench-tab-paneB">Enchantements</button>
+                            </li> 
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="land-tab" data-bs-toggle="tab" data-bs-target="#land-tab-paneB">Lands</button>
+                            </li> 
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="crea-tab-paneB" role="tabpanel" tabindex="0" >
+                                <div class="row">
+                                    <div class="col-sm col-md col-lg-4 cards1">
+                                        <ul>
+                                            <li>1x Changeling Outcast</li>  
+                                            <li>1x Consuming Aberration</li>
+                                            <li>1x Enigma Thief</li>  
+                                            <li>1x Faerie Vandal</li>
+                                            <li>1x Frogtosser Banneret</li>  
+                                            <li>1x Gonti, Lord of Luxury</li>  
+                                            <li>1x Invisible Stalker</li>  
+                                            <li>1x Latchkey Faerie</li>  
+                                            <li>1x Lazav, Dimir Mastermind</li>  
+                                            <li>1x Marang River Prowler</li>  
+                                            <li>1x Marsh Flitter</li>  
+                                            <li>1x Master Thief</li>  
+                                            <li>1x Merfolk Windrobber</li>  
+                                            <li>1x Nighthowler</li>  
+                                            <li>1x Nightveil Sprite</li> 
+                                        </ul>
+                                    </div>
+                               
+                                    <div class="col-sm col-md col-lg-4 cards">
+                                        <ul>
+                                            <li>1x Notion Thief</li>  
+                                            <li>1x Ogre Slumlord</li>  
+                                            <li>1x Oona, Queen of the Fae</li>  
+                                            <li>1x Oona's Blackguard</li>  
+                                            <li>1x Scourge of Fleets</li>  
+                                            <li>1x Sepulchral Primordial</li>  
+                                            <li>1x Slither Blade</li>  
+                                            <li>1x Soaring Thought-Thief</li>  
+                                            <li>1x Stinkdrinker Bandit</li>  
+                                            <li>1x Sure-Footed Infiltrator</li>  
+                                            <li>1x Sygg, River Cutthroat</li>  
+                                            <li>1x Syr Konrad, the Grim</li>  
+                                            <li>1x Triton Shorestalker</li>  
+                                            <li>1x Whirler Rogue</li>  
+                                            <li>1x Zulaport Cutthroat</li> 
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="sorc-tab-paneB" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1x Distant Melody</li>  
+                                        <li>1x Endless Obedience</li>  
+                                        <li>1x Extract from Darkness</li>  
+                                        <li>1x In Garruk's Wake</li>  
+                                        <li>1x Necromantic Selection</li>  
+                                        <li>1x Notorious Throng</li>  
+                                        <li>1x Open into Wonder</li>  
+                                        <li>1x Rise from the Grave</li>  
+                                        <li>1x Stolen Identity</li>  
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="inst-tab-paneB" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                   <ul>
+                                        <li>1x Aetherize</li>  
+                                        <li>1x Fact or Fiction</li>  
+                                        <li>1x Fated Return</li>  
+                                        <li>1x Murder</li>  
+                                        <li>1x Price of Fame</li>  
+                                        <li>1x Silumgar's Command</li>  
+                                        <li>1x Soul Manipulation</li>  
+                                        <li>1x Spinal Embrace</li>  
+                                   </ul> 
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="arti-tab-paneB" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1x Arcane Signet</li>  
+                                        <li>1x Blackblade Reforged</li>   
+                                        <li>1x Bonehoard</li>   
+                                        <li>1x Commander's Sphere</li>  
+                                        <li>1x Dimir Keyrune</li>   
+                                        <li>1x Dimir Locket</li>   
+                                        <li>1x Dimir Signet</li>   
+                                        <li>1x Heirloom Blade</li>   
+                                        <li>1x Mind Stone</li>   
+                                        <li>1x Obelisk of Urd</li>  
+                                        <li>1x Scytheclaw</li>   
+                                        <li>1x Sol Ring</li>   
+                                        <li>1x Whispersteel Dagger</li>   
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="ench-tab-paneB" role="tabpanel" tabindex="0">
+                                <div class="col-lg-4 cards1">
+                                    <ul>
+                                        <li>1x Military Intelligence</li>
+                                    </ul>
+                                </div>
+                            </div> 
+
+                            <div class="tab-pane fade" id="land-tab-paneB" role="tabpanel" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 cards1">
+                                        <ul>
+                                            <li>1x Command Tower</li>  
+                                            <li>1x Dimir Aqueduct</li>  
+                                            <li>1x Dimir Guildgate</li>  
+                                            <li>1x Dismal Backwater</li>  
+                                            <li>15x Island</li>  
+                                            <li>1x Jwar Isle Refuge</li>  
+                                            <li>1x Myriad Landscape</li>  
+                                            <li>1x Rogue's Passage</li>  
+                                            <li>1x Submerged Boneyard</li> 
+                                            <li>15x Swamp</li>  
+                                        </ul>
+                                    </div>
+                                </div> 
+                            </div> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <!--SECTION STATS mill farm-->
+        <div id="stats" class="parallax">
+            <div class="container inner">
+                <div class="row text-center">
+
+                    <div class="col-sm">
+                        <div class="col-wrapper pt-5 pb-3">
+                            <h1 class="blue">Difficulty</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm pt-5 pb-4">
+                        <div class="col-wrapper">
+                            <h1 class="blue">Funfactor</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm pt-5 pb-3">
+                        <div class="col-wrapper">
+                            <h1 class="blue">Cost</h1>
+                            <div class="icon-border">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

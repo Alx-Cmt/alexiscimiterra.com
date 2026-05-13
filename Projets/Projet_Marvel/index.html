@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf8">
+    <title>Marvel Univers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="marveluniverse">
+            <p class="marvel">MARVEL</p>
+            <p class="universe">UNIVERS</p>
+        </div>
+
+
+        <div class="container">
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="#personnages" class="btn2">Personnages</a>
+                    </li>
+                    <li>
+                        <a href="#cinéma" class="btn2">Cinéma</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="btn2">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="txtbackground">
+            <p id="discover">DÉCOUVREZ L'UNIVERS MARVEL !</p>
+            <p id="become">Devenez incollable sur l'univers Marvel, ses personnages et ses films...</p>
+        </div>
+
+        <div class="whitebackground">
+            <p id="char">LES PERSONNAGES EMBLEMATIQUES</p>
+            <div id="personnages">
+                <figure>
+                    <img src="img/iron-man.png" alt="" />
+                    <p class="herosname">Iron Man</p>
+                    <p class="herosdescription">Anthony "Tony" Stark, alias Iron man, est un super-héros évoluant dans
+                        l'univers marvel de la maison d'édition Marvel Comics. </p>
+                    <a href="https://fr.wikipedia.org/wiki/Iron_Man_(comics)" target="_blank" class="btn">Détail</a>
+                </figure>
+
+                <figure>
+                    <img src="img/spiderman.png" alt="" />
+                    <p class="herosname">Spiderman</p>
+                    <p class="herosdescription">Peter Parker, alias Spider-Man, est un super-héros évoluant dans
+                        l'univers Marvel de la maison d'édition Marvel Comics. </p>
+                    <a href="https://fr.wikipedia.org/wiki/Spider-Man" target="_blank" class="btn">Détail</a>
+                </figure>
+
+                <figure>
+                    <img src="img/captain-america.png" alt="" />
+                    <p class="herosname">Captain America</p>
+                    <p class="herosdescription">Captain America est un super héros de bande dessinée évoluant dans
+                        l'univers Marvel de la maison d'édition Marvel Comics. </p>
+                    <a href="https://fr.wikipedia.org/wiki/Captain_America" target="_blank" class="btn">Détail</a>
+                </figure>
+
+                <figure>
+                    <img src="img/thor.png" alt="" />
+                    <p class="herosname">Thor</p>
+                    <p class="herosdescription">Thor est une divinité et un super héros évoluant dans l'univers Marvel
+                        de la maison d'édition Marvel Comics. </p>
+                    <a href="https://fr.wikipedia.org/wiki/Thor_(comics)" target="_blank" class="btn">Détail</a>
+                </figure>
+            </div>
+        </div>
+
+
+
+        <div class="videocont">
+            <div class="redbackground"></div>
+            <p id="adaptation">ADAPTATION AU CINEMA</p>
+            <div id="cinéma">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rDCTb9Gp2qk?si=UpVhO7Jr9EMVAaCJ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="text">
+                    <p class="trailername">Iron Man</p>
+                    <p class="trailerdescription">Thor est une divinité et un super héros évoluant dans l'univers Marvel
+                        de la maison d'édition Marvel Comics.</p>
+                </div>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qi5UTD7kEr0?si=H0eZRlIOh21WJyKH"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="text">
+                    <p class="trailername">Captain America</p>
+                    <p class="trailerdescription">Thor est une divinité et un super héros évoluant dans l'univers Marvel
+                        de la maison d'édition Marvel Comics.</p>
+                </div>
+            </div>
+
+            <p id="adaptation2">A VENIR</p>
+
+            <table class="movietable">
+                <thead>
+                    <tr>
+                        <th>Nom du film</th>
+                        <th>Date de sortie</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Captain Marvel</td>
+                        <td>8 mars 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Avengers Infinity War - Part 2</td>
+                        <td>3 mai 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Spider-Man: Far From Home</td>
+                        <td>5 juillet 2019</td>
+                    </tr>
+                    <tr>
+                        <td>Guardians of the Galaxy vol. 3</td>
+                        <td>2020</td>
+                    </tr>
+            </table>
+            </tbody>
+            </table>
+
+            <video autoplay muted loop>
+                <source src="vid/avengers.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        
+        <div class="whitebackground2">  
+            <div id="contact">
+            
+                <div class="formulaire">
+                    <p id="contact3">CONTACTEZ-NOUS</p>
+                    <form method="POST" action="fichierDeTraitementDesDonnees.php">
+                        <div class="ligne">
+                            <label>Votre prénom :</label>
+                            <input type="text" id="name" name="fname">
+                        </div>
+                    
+                        <div class="ligne">
+                            <label>Votre email :</label>
+                            <input type="text" id="mail" name="email">
+                        </div>
+
+                        <div class="ligne">
+                            <label for="evenement">Objet de la demande : </label>
+                            <select id="demande" name="demande">
+                            <option value="fil">Films</option>
+                            <option value="eve" selected>Evénement</option>
+                            <option value="rec">Réclamation</option>
+                            </select>
+                        </div>
+
+                        <div class="ligne">
+                            <label for="textareaMessage">Votre message : </label>
+                            <textarea id="textareaMessage" name="message" rows="4">Saississez ici votre message</textarea>
+                            <a href="" target="_blank" class="btn3">Envoyer</a>
+                        </form>
+                    </div>
+            </div>
+                    
+            <div class="map">
+                <div id="contact2">STUDIO MARVEL</div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6073.432759315853!2d-118.38554919791177!3d33.90091296305058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b40fae4e6a5b%3A0x6312170bff57f5f8!2sManhattan%20Beach%20Studios!5e0!3m2!1sfr!2sfr!4v1771497334718!5m2!1sfr!2sfr"
+                        width="150%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p id="copyright">Copyright 2018 ...</p>
+        
+        <div class="social">
+            <nav>
+                <ul>
+
+                    <li>
+                        <a href="https://www.facebook.com/Marvel/" target="_blank" class="logo">
+                            <img class="fblogo" src="icon_res/Facebook_icon-icons.com_66805.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@marvel" target="_blank" class="logo">
+                            <img class="ytlogo" src="icon_res/YOUTUBE_icon-icons.com_65487.png">
+                    </li>
+                    <li>
+                        <a href="https://x.com/MarvelStudios/status/1633468033225355268" target="_blank" class="logo">
+                            <img class="twlogo" src="icon_res/twitter.png">
+                    </li>
+                    
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

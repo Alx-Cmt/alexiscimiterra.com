@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Olivarus</title>
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body data-bs-target="#menu" data-bs-offset="120">
+
+    <header>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                
+                <img src="./img/Logoblanc.png">
+                
+                <ul class="nav navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="navlink" href="#come">Nouveau client</a>
+                        <a class="navlink" href="#leave">Départ Client</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <div class="parallax un" id="come">
+        <div class="container-fluid">
+            <div class="title">
+                <h1>Accueil nouveau client</h1>
+            </div>
+            
+        </div>
+    </div>
+    <div class="section d-flex align-items-center">
+            <form class="container-fluid" id="form1">
+                    <div class="block a">
+                        <h5>Prénom</h5>
+                        <input class="form-control" type="text" id="firstname" name="firstname" required />
+                    </div>
+                    <div class="block a">
+                        <h5>Nom</h5>
+                        <input class="form-control" type="text" id="lastname" name="lastname" required />
+                    </div>
+                    <div class="block a">
+                        <h5>Nombre de nuits</h5>
+                        <input class="form-control" type="number" id="night" name="night" required />
+                    </div>
+                    <div class="block b">
+                        <h5>Chambre</h5>
+                        <select id="roomtype">
+                            <option value="room1" selected>Chambre 1 personne</option>
+                            <option value="room2">Chambre 2 personne</option>
+                            <option value="room3">Chambre 3 personnes</option>
+                            <option value="loft">Loft</option>
+                        </select>
+                    </div>
+                    <div class="block b">
+                        <h5>Petit déjeuner ?</h5>
+                        <input type="radio" id="breakfast1" name="breakfast" value="oui">
+                        <label for="breakfast1">oui</label>
+                        <input type="radio" id="breakfast2" name="breakfast" value="non">
+                        <label for="breakfast2">non</label>
+                    </div>
+                    <button type="submit">
+                        <h6>Enregistrer le client <i class="fa-solid fa-calendar"></i></h6>
+                    </button>
+            </form>
+        </div>
+
+
+    <div class="parallax deux" id="leave">
+        <div class="container-fluid">
+            <div class="title">
+                <h1>Départ client</h1>
+            </div>
+            
+        </div>
+    </div>
+    <div class="section d-flex align-items-center">
+        <form class="container-fluid" id="form2">
+                <div class="block a">
+                    <h5>Prénom</h5>
+                    <input class="form-control" type="text" id="firstname-look" name="firstname" required />
+                </div>
+                <div class="block a">
+                    <h5>Nom</h5>
+                    <input class="form-control" type="text" id="lastname-look" name="lastname" required />
+                </div>
+                <button type="submit">
+                    <h6>Rechercher <i class="fa-solid fa-person"></i></h6>
+                </button>
+        </form>
+    </div>
+
+    <div id="invoice" class="invoice hidden"></div>
+</main>
+
+<script src="js/main.js"></script>    
+</body>
+</html>
