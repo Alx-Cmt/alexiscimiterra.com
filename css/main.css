@@ -94,7 +94,7 @@ a {
 h1 {
   font-family: "ClashDisplay-Bold";
   color: #f56e6d;
-  font-size: clamp(5rem, 10vw, 11rem);
+  font-size: clamp(4.5rem, 10vw, 11rem);
   text-transform: uppercase;
   opacity: 0.8;
   line-height: 0.7;
@@ -590,7 +590,7 @@ h4 {
 @media (max-width: 991px) {
   .heros, .heros3 {
     overflow-y: auto;
-    height: 100vh;
+    height: 100dvh;
   }
   h1 {
     letter-spacing: 0;
