@@ -155,7 +155,7 @@ h4 {
   color: #372727;
 }
 
-.heros2 i {
+.heros2 #prev, .heros2 #next {
   display: flex;
   align-items: center;
   color: #fff9f4;
@@ -170,7 +170,7 @@ h4 {
     transform: scale(1.3);
   }
 }
-.heros2 i:hover {
+.heros2 #prev:hover, .heros2 #next:hover {
   animation: beat 0.3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -392,16 +392,19 @@ h4 {
   gap: 1rem;
   background-color: #fff9f4;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.5rem;
   height: auto;
   min-height: 26rem;
   text-decoration: none;
-  z-index: 2;
+  justify-content: space-between;
   transition: all 0.4s ease;
 }
 .heros2 .projet2 .carte .screencapture {
   width: 70%;
   min-width: 70%;
+}
+.heros2 .projet2 .carte p {
+  margin: 0;
 }
 .heros2 .projet2 .carte .descriptioncard {
   text-align: center;
@@ -414,6 +417,43 @@ h4 {
   transform: translateY(-0.8rem);
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.432);
   filter: brightness(0.9);
+}
+.heros2 .projet2 .mytooltips {
+  display: flex;
+  justify-content: center;
+}
+.heros2 .projet2 .mytooltip {
+  position: relative;
+  display: inline-block;
+  pointer-events: all;
+}
+.heros2 .projet2 i {
+  color: #f56e6d;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  padding: 0;
+  padding: 0rem 0.5rem;
+  transition: all 0.3s ease;
+}
+.heros2 .projet2 .mytooltiptext {
+  visibility: hidden;
+  background-color: #f56e6d;
+  color: #fff9f4;
+  font-family: "ClashDisplay-Semibold";
+  text-align: center;
+  border-radius: 6px;
+  padding: 0rem 0.5rem;
+  position: absolute;
+  z-index: 5;
+  bottom: 105%;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+.heros2 .projet2 .mytooltip:hover .mytooltiptext {
+  visibility: visible;
+}
+.heros2 .projet2 .mytooltip:hover i {
+  scale: 1.1;
 }
 @media (max-width: 1400px) {
   .heros2 .projet2 .carte {

@@ -173,6 +173,7 @@
         transform: translateX(200%);
         transition: transform 0.4s ease-out;
         background-color: v.$color-two;
+
         .container2{
             width: 95%;;
             display: flex;
@@ -196,15 +197,18 @@
             gap: 1rem;
             background-color: v.$color-one;
             border-radius: 10px;
-            padding: 1rem;
+            padding: 0.5rem;
             height:auto;
             min-height: 26rem;
             text-decoration: none;
-            z-index: 2;
+            justify-content: space-between;
             transition: all 0.4s ease;
             .screencapture{
                 width: 70%;
                 min-width: 70%;
+            }
+            p{
+                margin: 0;
             }
             .descriptioncard{
                 text-align: center;
@@ -219,6 +223,46 @@
                 filter: brightness(0.9);
             }
         }
+        .mytooltips{
+            display: flex;
+            justify-content: center;
+        }
+        .mytooltip {
+                position: relative;
+                display: inline-block;
+                pointer-events: all;
+                
+            }
+            i{
+                color: v.$color-two;
+                font-size:clamp(2rem, 3vw, 2.5rem);
+                padding: 0;
+                padding : 0rem 0.5rem;
+                transition: all 0.3s ease;
+            }
+            .mytooltiptext {
+                visibility: hidden;
+                background-color: v.$color-two;
+                color: v.$color-one;
+                font-family: 'ClashDisplay-Semibold';
+                text-align: center;
+                border-radius: 6px;
+                padding: 0rem 0.5rem;
+                position: absolute;
+                z-index: 5;
+                bottom: 105%;
+                left: 50%;
+                text-transform: uppercase;
+                transform: translateX(-50%);
+                
+            }
+
+            .mytooltip:hover .mytooltiptext {
+                visibility: visible;
+            }
+            .mytooltip:hover i {
+                scale: 1.1;
+            }
     }
     @media (max-width: 1400px){
         .projet2{
