@@ -36,7 +36,8 @@ body::after {
 
 .buttons {
   display: flex;
-  gap: 0;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 a {
@@ -48,7 +49,7 @@ a {
   align-items: center;
   text-transform: uppercase;
   font-family: "ClashDisplay-Semibold";
-  font-size: clamp(0.7rem, 1.5vw, 1.2rem);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   letter-spacing: 0.05rem;
   z-index: 2;
   color: #f56e6d;
@@ -57,10 +58,21 @@ a {
   border-radius: 25px;
   transition: all 0.5s;
 }
+.btn i {
+  color: #f56e6d;
+}
 .btn:hover {
   color: #fff9f4;
   border-color: #f56e6d;
   background-color: #f56e6d;
+}
+.btn:hover i {
+  color: #fff9f4;
+}
+
+ul {
+  list-style: none;
+  padding-left: 5px;
 }
 
 @font-face {
@@ -184,9 +196,11 @@ h4 {
 }
 .heros2 p {
   font-family: "ClashDisplay-Regular";
-  font-size: clamp(0.9rem, 0.9vw, 1.5rem);
+  font-size: clamp(1.1rem, 0.9vw, 1.5rem);
   color: #8d6f6d;
   line-height: 1;
+  height: 7rem;
+  align-self: center;
 }
 
 .heros3 h1 {
@@ -195,7 +209,6 @@ h4 {
   justify-content: flex-end;
 }
 .heros3 i {
-  color: #fff9f4;
   font-size: clamp(1.5rem, 1.5vw, 3rem);
 }
 .heros3 h2 {
@@ -220,6 +233,51 @@ h4 {
 .heros3 .pastille i {
   color: rgb(37, 161, 37);
   font-size: clamp(0.5rem, 0.5vw, 2rem);
+}
+
+.heros4 h3 {
+  font-family: "ClashDisplay-Semibold";
+  font-size: clamp(3rem, 3vw, 4rem);
+  color: #f56e6d;
+  margin-bottom: 1rem;
+}
+.heros4 .outils2 i {
+  font-size: clamp(3rem, 3vw, 5rem);
+  color: #fff9f4;
+}
+.heros4 .titre {
+  font-family: "ClashDisplay-Semibold";
+  font-size: clamp(1.5rem, 1vw, 3rem);
+  color: #fff9f4;
+  align-items: start;
+}
+.heros4 .description {
+  font-family: "ClashDisplay-Regular";
+  font-size: clamp(1rem, 0.5vw, 2rem);
+  background-color: #fff9f4;
+  color: #f56e6d;
+  padding: 5px;
+  border-radius: 10px;
+}
+.heros4 h1 {
+  color: #fff9f4;
+}
+.heros4 h4 {
+  color: #fff9f4;
+}
+.heros4 .btn {
+  color: #fff9f4;
+  border-color: #fff9f4;
+}
+.heros4 .btn i {
+  color: #fff9f4;
+}
+.heros4 .btn:hover {
+  color: #f56e6d;
+  background-color: #fff9f4;
+}
+.heros4 .btn:hover i {
+  color: #f56e6d;
 }
 
 .heros {
@@ -389,14 +447,12 @@ h4 {
   flex: 0 0 22%;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   background-color: #fff9f4;
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 1rem;
   height: auto;
-  min-height: 26rem;
+  height: 26rem;
   text-decoration: none;
-  justify-content: space-between;
   transition: all 0.4s ease;
 }
 .heros2 .projet2 .carte .screencapture {
@@ -414,13 +470,13 @@ h4 {
   border: 5px solid #f56e6d;
 }
 .heros2 .projet2 .carte:hover {
-  transform: translateY(-0.8rem);
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.432);
-  filter: brightness(0.9);
+  transform: scale(0.95);
+  filter: brightness(0.95);
 }
 .heros2 .projet2 .mytooltips {
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
 .heros2 .projet2 .mytooltip {
   position: relative;
@@ -429,7 +485,7 @@ h4 {
 }
 .heros2 .projet2 i {
   color: #f56e6d;
-  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-size: clamp(2.5rem, 3vw, 2.5rem);
   padding: 0;
   padding: 0rem 0.5rem;
   transition: all 0.3s ease;
@@ -530,10 +586,16 @@ h4 {
   border-radius: 25px;
   transition: all 0.5s;
 }
+.heros3 .contact2 .btn i {
+  color: #fff9f4;
+}
 .heros3 .contact2 .btn:hover {
   color: #f56e6d;
   border-color: #fff9f4;
   background-color: #fff9f4;
+}
+.heros3 .contact2 .btn:hover i {
+  color: #f56e6d;
 }
 .heros3 .contact2 .container2 {
   display: flex;
@@ -627,8 +689,82 @@ h4 {
   background-color: #f56e6d;
 }
 
+.heros4 .outils1 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-200%);
+  transition: transform 0.4s ease-out;
+  background-color: #f56e6d;
+}
+.heros4 .outils1 .container2 {
+  width: 85%;
+  padding: 3rem 0rem;
+}
+.heros4 .outils1 h1 {
+  padding: 1rem 0rem;
+}
 @media (max-width: 991px) {
-  .heros, .heros3 {
+  .heros4 .outils1 {
+    height: 40%;
+  }
+}
+.heros4 .outils2 {
+  transform: translateY(300%);
+  transition: transform 0.4s ease-out;
+  background-color: #fff9f4;
+  height: 50%;
+}
+.heros4 .outils2 .container2 {
+  height: 100%;
+}
+.heros4 .outils2 .card-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.heros4 .outils2 .card {
+  background-color: #f56e6d;
+  width: 14rem;
+  height: 18rem;
+  display: flex;
+  padding: 1.5rem 1rem;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+}
+.heros4 .outils2 .card .card:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.2666666667);
+}
+.heros4 .outils2 .card .infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.heros4:target .outils1 {
+  transform: translateY(0px);
+  pointer-events: all;
+}
+
+.heros4:target .outils2 {
+  transform: translateY(0px);
+  pointer-events: all;
+}
+
+.heros4:target .outils {
+  color: #f56e6d;
+  background-color: #fff9f4;
+}
+
+@media (max-width: 991px) {
+  .heros, .heros3, .heros4 {
     overflow-y: auto;
     height: 100dvh;
   }

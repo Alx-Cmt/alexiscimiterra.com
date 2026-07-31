@@ -1,13 +1,20 @@
 if (!window.location.hash) window.location.hash = "#alexis";
+
 const carousel = document.querySelector('.carousel');
 const carte = document.querySelector('.carte');
 
+function getScrollAmount() {
+  const style = getComputedStyle(carousel);
+  const gap = parseFloat(style.gap) || 0;
+  return carte.offsetWidth + gap;
+}
+
 document.getElementById('next').addEventListener('click', () => {
-  carousel.scrollBy({ left: carte.offsetWidth, behavior: 'smooth' });
+  carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
 });
 
 document.getElementById('prev').addEventListener('click', () => {
-  carousel.scrollBy({ left: -carte.offsetWidth, behavior: 'smooth' });
+  carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
 });
 
 function submitContact() {
@@ -27,6 +34,6 @@ function submitContact() {
   })
   .catch((err) => {
     console.error('Erreur :', err);
-    alert('Erreur lors de l\'envoi, réessaie.');
+    alert('Erreur lors de l\'envoi, réessayer.');
   });
 }

@@ -20,11 +20,17 @@
     border: 2px solid $color;
     border-radius: 25px;
     transition: all 0.5s;
+    i{
+      color:$color; 
+    }
 
     &:hover{
         color:$color2;
         border-color: $color;
         background-color: $color;
+        i{
+          color:$color2;
+        }
     }
 }
 

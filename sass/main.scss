@@ -194,14 +194,12 @@
             flex:0 0 22%;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
             background-color: v.$color-one;
             border-radius: 10px;
-            padding: 0.5rem;
+            padding: 1rem;
             height:auto;
-            min-height: 26rem;
+            height: 26rem;
             text-decoration: none;
-            justify-content: space-between;
             transition: all 0.4s ease;
             .screencapture{
                 width: 70%;
@@ -218,24 +216,23 @@
                 border: 5px solid v.$color-two;
             }
             &:hover{
-                transform: translateY(-0.8rem);
-                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.432);
-                filter: brightness(0.9);
+                transform: scale(0.95);
+                filter: brightness(0.95);
             }
         }
         .mytooltips{
             display: flex;
             justify-content: center;
+            margin-top: auto;
         }
         .mytooltip {
                 position: relative;
                 display: inline-block;
-                pointer-events: all;
-                
+                pointer-events: all;    
             }
             i{
                 color: v.$color-two;
-                font-size:clamp(2rem, 3vw, 2.5rem);
+                font-size:clamp(2.5rem, 3vw, 2.5rem);
                 padding: 0;
                 padding : 0rem 0.5rem;
                 transition: all 0.3s ease;
@@ -436,8 +433,83 @@
     background-color:v.$color-two;
 }
 
+.heros4{
+    .outils1{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        transform: translateY(-200%);
+        transition: transform 0.4s ease-out;
+        background-color:v.$color-two;
+        .container2{
+            width: 85%;
+            padding: 3rem 0rem;
+        }
+        h1{
+            padding:1rem 0rem;
+        }
+        @media(max-width: 991px){
+            height: 40%;
+        }
+    }
+
+    .outils2{
+        transform: translateY(300%);
+        transition: transform 0.4s ease-out;
+
+        background-color: v.$color-one;
+        height: 50%;
+        .container2{
+            height: 100%;
+        }
+        .card-list{
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            height: 100%;
+            padding: 2rem;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .card{
+            background-color:v.$color-two;
+            width: 14rem;
+            height: 18rem;
+            display: flex;
+            padding: 1.5rem 1rem;
+            align-items: center;
+            gap: 1rem;
+            border-radius: 20px;
+            .card:hover {
+                transition-duration: 150ms;
+                box-shadow: 0 5px 20px 5px #00000044;
+            }
+            
+            .infos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
+        }
+    }
+}
+.heros4:target .outils1 {
+    transform: translateY(0px);
+    pointer-events: all;
+}
+.heros4:target .outils2 {
+    transform: translateY(0px);
+    pointer-events: all;
+}
+.heros4:target .outils {
+    color: v.$color-two;
+    background-color:v.$color-one;
+}
+
 @media(max-width: 991px){
-    .heros, .heros3{
+    .heros, .heros3, .heros4{
         overflow-y: auto;
         height: 100dvh;
     }
