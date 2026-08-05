@@ -28,7 +28,6 @@
         .container-fluid{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             padding:2rem 1rem;
             margin: 0;  
         }
@@ -37,6 +36,7 @@
     .block-photo{
         display: flex;
         justify-content: center;
+        padding: 2rem;
         .cadre{
             display: flex;
             flex-basis: 50%;
@@ -45,8 +45,14 @@
             border-radius: 10px;
         }
     }
-    
+    .info-inner{
+        padding-bottom: 3%;
+    }
     .block-info{
+        padding-top: 10%;
+        @media (max-width: 1400px){
+            padding-top: 0rem;
+        }
         ul{
             margin:0rem;
             padding-bottom: 0.2rem;
@@ -58,7 +64,7 @@
             padding-bottom: 0.5rem;
         }
         .date{
-            min-width: 12rem;
+            min-width: 15rem;
         }
 
     }
@@ -197,13 +203,15 @@
             background-color: v.$color-one;
             border-radius: 10px;
             padding: 1rem;
-            height:auto;
-            height: 26rem;
+            height: 80%;
             text-decoration: none;
             transition: all 0.4s ease;
             .screencapture{
                 width: 70%;
                 min-width: 70%;
+                img{
+                    width: 100%;
+                }
             }
             p{
                 margin: 0;
@@ -232,10 +240,11 @@
             }
             i{
                 color: v.$color-two;
-                font-size:clamp(2.5rem, 3vw, 2.5rem);
+                font-size:clamp(2.5rem, 2vw, 6rem);
                 padding: 0;
                 padding : 0rem 0.5rem;
                 transition: all 0.3s ease;
+
             }
             .mytooltiptext {
                 visibility: hidden;
@@ -260,6 +269,13 @@
             .mytooltip:hover i {
                 scale: 1.1;
             }
+    }
+    @media (max-width: 2560px){
+        .projet2{
+            .carte{
+                flex: 0 0 20%;
+            }
+        }
     }
     @media (max-width: 1400px){
         .projet2{
@@ -336,6 +352,8 @@
     .contact2{
         transform: translateX(200%);
         transition: transform 0.4s ease-out;
+        height: 100%;
+        
         
         .btn{
             @include m.btn(v.$color-one, v.$color-two);
@@ -343,6 +361,8 @@
         .container2{
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: 50%;
             gap: 3rem;
         }
         .mail{
@@ -395,6 +415,7 @@
             }
         }
         .social-wrapper{
+            height: 6.2rem;
             display: flex;
             align-items: center; 
             border-bottom: 1px solid v.$color-five;;
@@ -456,7 +477,6 @@
     .outils2{
         transform: translateY(300%);
         transition: transform 0.4s ease-out;
-
         background-color: v.$color-one;
         height: 50%;
         .container2{
@@ -473,18 +493,15 @@
         }
 
         .card{
-            background-color:v.$color-two;
-            width: 14rem;
-            height: 18rem;
+            background-color:v.$color-two;  
+            width: 12%;
+            min-width: 15rem;
+            height: 70%;
             display: flex;
             padding: 1.5rem 1rem;
             align-items: center;
             gap: 1rem;
             border-radius: 20px;
-            .card:hover {
-                transition-duration: 150ms;
-                box-shadow: 0 5px 20px 5px #00000044;
-            }
             
             .infos{
                 display: flex;
@@ -492,7 +509,7 @@
                 align-items: center;
                 height: 100%;
             }
-        }
+        }  
     }
 }
 .heros4:target .outils1 {

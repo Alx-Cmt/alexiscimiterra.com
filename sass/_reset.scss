@@ -29,6 +29,7 @@ body{
     display: flex;
     gap:10px;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 a{
     padding: 0.2rem 0.5rem;
@@ -38,7 +39,7 @@ a{
     align-items: center;
     text-transform: uppercase;
     font-family: 'ClashDisplay-Semibold';
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(0.8rem, 1vw, 2rem);
     letter-spacing: 0.05rem;
     z-index: 2;
     @include m.btn(v.$color-two, v.$color-one);
