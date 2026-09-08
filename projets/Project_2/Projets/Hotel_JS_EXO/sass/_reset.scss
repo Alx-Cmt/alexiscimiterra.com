@@ -1,0 +1,37 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    // Rédéfinir la taille par défaut d'1 rem à 10px plutôt que 16px
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: none;
+}
+
+.container-fluid{
+    width: 90%;
+}
+
+h5{
+    font-size: 1.5rem;
+}
+
+.form-control{
+        height: 3rem;
+        border-radius: 0px;
+    }
+
+a{
+    text-decoration: none;
+}
+
+#menu{
+    background-color: #333333;
+    min-height: 8rem;
+}

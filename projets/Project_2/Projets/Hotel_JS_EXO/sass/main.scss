@@ -1,0 +1,133 @@
+@use "reset";
+@use "variables" as v;
+@use "mixins" as m;
+
+#menu{
+    img{
+        width: 30rem;
+        height: auto;
+    }
+
+    a{
+        color: white;
+        padding: 1rem;
+    }
+}
+.un{
+    background-image: url("../img/Lille-Seminaires.jpg");
+}
+.deux{
+    background-image: url("../img/Lille-Hall.jpg");
+}
+.parallax{
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .container-fluid {
+        @include m.centering;
+        height: 100%;
+    }
+
+    .title{
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.719);
+        padding : 1.5rem;
+        @include m.line(#B99674, 8rem, 0.20rem,-4rem, $top: 115%, $left:50%,)
+    }
+
+    h1{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 4rem;
+        color: #2F2F2F;
+        padding-bottom: 3rem;
+    }
+}
+
+.section{
+    background-color: rgb(255, 255, 255);
+    height: 30vh;
+    color: white;
+
+    .container-fluid{
+        background-color: #2F2F2F;
+        width: 90%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block {
+        padding: 1rem;
+        &.a {
+            flex-basis: 20%;
+        }
+        &.b {
+            flex-basis: 10%;
+        }
+    }
+}
+
+button{
+    @include m.button(white, #B99470, #B99470, white, $right:1.5rem, $left:1.5rem, $top:2rem, $bottom:2rem);
+    h6{
+        font-size: 2rem;
+    }
+}
+.invoice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #B99470;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.invoice.show {
+    transform: translateY(0);
+}
+
+@media (max-width: v.$breakpoint-ph) {
+    #menu{
+        img{
+            width: 40%;
+        }
+        a{
+            font-size: 1rem;
+            padding: 0.1rem;
+        }
+    }
+    .parallax{
+        height: 40vh;
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+    .section{
+        height: 60vh;
+        .container-fluid{
+            padding: 1rem;
+            height: 90%;
+            width: 100%;
+            flex-direction: column;
+        }
+        .block{
+        padding:1rem;
+        width: 100%;
+        padding:0rem;
+        }
+        
+        .button{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

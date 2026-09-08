@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <title>Index JavaScript</title>
+</head>
+
+<body>
+    <header>
+        <nav id="menu" class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                
+                <a class="navbar-brand" href="#">Index JavaScript</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="menu" aria-expanded="false" aria-label="Afficher le menu de navigation">
+                    <span class="navbar-toggler-icon"></span>               
+                </button>
+                
+                <div id="navbarContent" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="navlink" href="index.html">Index</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">JavaScript</a>
+                                <div class="dropdown-content">
+                                    <a href="page2.html">Lecon Javascript</a>
+                                    <a href="page3.html">DOM</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="parallax un" id="section">
+            <div class="container-fluid">
+                <div class="bannertitle">
+                    <h1>Lexique</h1>
+                </div>
+                <div class="new-wrapper">
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">Variables</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- Déclarer et affecter une valeur à une variable :</h4>
+                            <ul>
+                                <li>var id = "valeur";</li>
+                                <li>let id = "valeur";</li>
+                                <li>const id = "valeur"</li>
+                                <h4>Var : Ancienne méthode, problème de hoisting (la déclaration de la variable peut remonter).</h4>
+                                <h4>Let : Nouvelle methode, la variable ne remonte pas. </h4>
+                                <h4>Const : Une variable qu’on ne peut pas réassigner après sa création.</h4>
+                            </ul>
+                            <h4>- Afficher une variable dans une console</h4>
+                            <ul>
+                                <li>console.log(id);</li>
+                            </ul>
+                            <h4>- Obtenir le type d'une variable</h4>
+                            <ul>
+                                <li>console.log(typeof(prenom));</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les fonctions flechées</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- Cas 1 : sans parametre : </h4>
+                            <ul>
+<pre><code>let NomFonction = () => {
+    return "resultat"
+}</code></pre>
+                            </ul>
+                            <h4>- Cas 2 : 1 parametre : </h4>
+                            <ul>
+<pre><code>let NomFonction = (parametre1) => {
+    return parametre1.name;
+}</code></pre>
+                            </ul>
+                             <h4>- Cas 3 : 2 parametres : </h4>
+                            <ul>
+<pre><code>let NomFonction = (fname, lname) => {
+    return `${fname} ${lname}`;
+}</code></pre>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">L'incrémentation et la décrementation : </h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- L'incrémentation : </h4>
+                            <ul>
+                                <li>nb1 += 1;</li>
+                                <li>nb1++;</li>
+                                <li>++nb1</li>
+                                <h4>nb1 ++ : Affiche la valeur de nb1 avant incrementation</h4>
+                                <h4>++ nb1 : Effectue l'incrementation puis affiche la valeur</h4>
+                            </ul>
+                            <h4>- La décrementation : </h4>
+                            <ul>
+                                <li>nb1 -= 1;</li>
+                                <li>nb1--;</li>
+                                <li>--nb1</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">Alerte et prompt</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- L'alerte : </h4>
+                            <ul>
+                                <li>alert("message")</li>
+                                <h4>Affiche une alerte a l'utilisateur</h4>
+                            </ul>
+                            <h4>- Le prompt : </h4>
+                            <ul>
+                                <li>var id = prompt("Message : ");</li>
+                                <h4>Demande une saisie a l'utilisateur</h4>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les fonctions</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- Structure d'une fonction : </h4>
+                            <ul>
+<pre><code>function ID(parametre) {
+    var hellodisplay = "Hello " + firstname + "!";
+    return hellodisplay;
+}</code></pre>
+                            </ul>
+                            <h4>- Structure d'une fonction (Avec Destructuring) : </h4>
+                            <ul>
+<pre><code>function ID({parametre1, parametre2}){
+    return `${parametre1} ${parametre2}`
+}</code></pre>
+                            </ul>
+                            <h4>- Appel d'une fonction : </h4>
+                            <ul>
+                                <li>display = id(parametre);</li>
+                            </ul>
+                            <h4>- Valeur par defaut pour les parametre d'une fonction</h4>
+                            <ul>
+<pre><code>function carre(nb = 10) {
+    return nb * nb;
+}</code></pre>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les conditions</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- Structure d'une condition : </h4>
+                            <ul>
+<pre><code>if (condition) {
+    instructions;
+}</code></pre>   
+                            </ul>
+                            <h4>- Exemple : </h4>
+                            <ul>
+<pre><code>if (age > 18) {
+    console.log("Tu es majeur.");
+} else if (age === 18) {
+    console.log("Tu as 18 ans.");
+} else {
+    console.log("Tu es mineur.");
+}</code></pre>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax2 deux" id="section">
+            <div class="container-fluid">
+                <div class="block d-flex justify-content-between">
+                
+                        <div class="inner-block">
+                                <div class="bannertitle">
+                                    <h1>Les tableaux numerique</h1>
+                                </div>
+                            <div class="tableau">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Indexs</th>
+                                            <th class="text-center">Valeurs</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="un">
+                                            <td>0</td>
+                                            <td>Valeur</td>
+                                        </tr>
+                                        <tr class="deux">
+                                            <td>1</td>
+                                            <td>Valeur</td>
+                                        </tr>
+                                        <tr class="un">
+                                            <td>2</td>
+                                            <td>Valeur</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="new-wrapper justify-content-between">
+                                <div class="new-inner-wrapper2">
+                                    <div class="sub-title">
+                                        <h2 class="text-center">Declarer et affecter un tableau numerique</h2>
+                                    </div>
+                                    <div class="contenu">
+                                        <h4>- Declaration d'un tableau numerique (2 facon)</h4>
+                                        <ul>
+                                            <li>var idTableau = [];</li>
+                                            <li>var idTableau = new Array();li>
+                                        </ul>
+                                        <h4>- Affecter ou Reaffecter des valeurs a un tableau numerique</h4>
+                                        <ul>
+                                            <li>idTableau[0] = "Contenu";</li>
+                                            <li>idTableau[1] = "Contenu";</li>
+                                        </ul>
+                                        <h4>- Declarer et affecter un tableau numerique sur la meme ligne</h4>
+                                        <ul>
+                                            <li>var idTableau = ["Contenu", "Contenu", "Contenu"];</li>
+                                        </ul>
+                                        <h4>- Acces simplifiées aux elements d'un tableau ou d'un objet (avec Destructuring) : </h4>
+                                        <ul>
+                                            <li>const[a, b] = tabNum;</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="new-inner-wrapper2">
+                                    <div class="sub-title">
+                                        <h2 class="text-center">Modifier le contenu d'un tableau numerique</h2>
+                                    </div>
+                                    <div class="contenu">
+                                        <h4>- Ajouter un ou plusieurs élements a un tableau</h4>
+                                        <ul>
+                                            <li>idTableau.push("Contenu");</li>
+                                            <li>idTableau.push("Contenu, Contenu2");</li>
+                                            <li>idTableau.splice(1, 0, "contenu");</li>
+                                            <h4>La methode splice peut ajouter des elements a une position donnee</h4>
+                                        </ul>
+                                        <h4>- Retirer un element d'un tableau</h4>
+                                        <ul>
+                                            <li>idTableau.pop();</li>
+                                            <h4>La methode pop permet de retirer le dernier élement d'un tableau</h4>
+                                            <li>idTableau.shift(); </li>
+                                            <h4>La methode shift retire le premier élement d'un tableau</h4>
+                                            <li>idTableau.splice(positionDemarrage, NbElementaSupprimer);</li>
+                                            <h4>La methode splice retire un ou plusieur element d'un tableau a une position donnée</h4>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="inner-block">
+                        <div class="bannertitle">
+                            <h1>Les tableaux associatifs</h1>
+                        </div>
+
+                        <div class="tableau">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Indexs</th>
+                                        <th class="text-center">Valeurs</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="un">
+                                        <td>Nom</td>
+                                        <td>Cimiterra</td>
+                                    </tr>
+                                    <tr class="deux">
+                                        <td>Prénom</td>
+                                        <td>Alexis</td>
+                                    </tr>
+                                    <tr class="un">
+                                        <td>Age</td>
+                                        <td>29</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="new-wrapper">
+                            <div class="new-inner-wrapper2-5">
+                                <div class="sub-title">
+                                    <h2 class="text-center">Declaration, affectation et affichage d'un tableau associatif</h2>
+                                </div>
+                                <div class="contenu">
+                                    <h4>- Declaration et affecation</h4>
+                                    <ul>
+                                        <li>
+<pre><code>var personne = {
+    nom: "Cimiterra",
+    prenom: "Alexis",
+    age: 29
+};</code></pre>
+                                        </li>
+                                    </ul>
+                                    <h4>- Affichage</h4>
+                                    <ul>
+                                        <li>console.table(personne);</li>
+                                        <li>console.log(personne.prenom);</li>
+                                        <li>console.log(personne["nom"]);</li>
+                                    </ul>
+                                    <h4>- Acces simplifiées aux elements d'un tableau ou d'un objet (avec Destructuring) : </h4>
+                                    <ul>
+                                        <li>const{nom, prenom} = personne;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div class="parallax trois" id="section">
+            <div class="container-fluid">
+                <div class="bannertitle">
+                    <h1>Les tableaux a 2 dimensions</h1>
+                </div>
+
+                <div class="block d-flex justify-content-around">
+
+                    <div class="block-inner">
+                        <h3 class="text-center">Tableau a 2 dimensions numerique et associatif</h3>
+                        <div class="new-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Indexs</th>
+                                        <th>Prénom</th>
+                                        <th>Nom</th>
+                                        <th>Age</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="un">
+                                        <td>0</td>
+                                        <td>Alexis</td>
+                                        <td>Cimiterra</td>
+                                        <td>29</td>
+                                    </tr>
+                                    <tr class="deux">
+                                        <td>1</td>
+                                        <td>Kim</td>
+                                        <td>Bjork</td>
+                                        <td>34</td>
+                                    </tr>
+                                    <tr class="un">
+                                        <td>2</td>
+                                        <td>Romain</td>
+                                        <td>Mercier</td>
+                                        <td>40</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        
+                            <div class="new-inner-wrapper3">
+                                <div class="sub-title">
+                                    <h2 class="text-center">Tableau a 2 dimensions numerique et associatif</h2>
+                                </div>
+                                <div class="contenu">
+                                    <h4>- Declaration et affectation</h4>
+                                    <ul>
+                                        <li>
+<pre><code>var personne = [
+    {
+        nom: "Cimiterra",
+        prenom: "Alexis",
+        age: 29,
+    },
+    {
+        nom: "Bjork",
+        prenom: "Kim",
+        age: 34,
+    },
+    {
+        nom: "Mercier",
+        prenom: "Romain",
+        age: 40,
+    }
+];</code></pre>
+                                        </li>
+                                    </ul>
+                                    <h4>- Affichage</h4>
+                                    <ul>
+                                        <li>console.table(personne);</li>
+                                        <li>console.log(personne[0].prenom + " et " + personne[1]["nom"]);</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-inner">
+                        <h3 class="text-center">Tableau a 2 dimensions numerique</h3>
+                        <div class="tableau">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Indexs</th>
+                                        <th>0</th>
+                                        <th>1</th>
+                                        <th>2</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="un">
+                                        <td>0</td>
+                                        <td>Alexis</td>
+                                        <td>Kim</td>
+                                        <td>Antoine</td>
+                                    </tr>
+                                    <tr class="deux">
+                                        <td>1</td>
+                                        <td>Cimiterra</td>
+                                        <td>Bjork</td>
+                                        <td>Mercier</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="new-wrapper">
+                            <div class="new-inner-wrapper3">
+                                <div class="sub-title">
+                                    <h2 class="text-center">Tableau a 2 dimensions numerique</h2>
+                                </div>
+                                <div class="contenu">
+                                    <h4>- Declaration et affecation</h4>
+                                    <ul>
+                                        <li>var tabPrenom = ["Alexis", "Kim", "Antoine"];</li>
+                                        <li>var tabNom = new Array("Cimiterra", "Bjork", "Mercier");</li>
+                                        <li>var Personnes = new Array(tabPrenom, tabNom);</li>
+                                        <h4>A partir de ces 2 tableaux numerique ont creer un tableau a 2 dimensions.</h4>
+                                    </ul>
+                                    <h4>- Affichage</h4>
+                                    <ul>
+                                        <li>console.table(Personnes);</li>
+                                        <li>console.log(Personnes[0][0]);</li>
+                                        <h4>Affiche la position de la premiere ligne et colonne(Alexis Cimiterra).</h4>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax2 quatre" id="section">
+            <div class="container-fluid">
+                <div class="bannertitle">
+                    <h1>Les Opérateurs</h1>
+                </div>
+                <div class="new-wrapper">
+
+                    <div class="new-inner-wrapper4">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les opérateurs arithmétiques</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- Addition, Soustraction, Division, Multiplication : </h4>
+                            <ul>
+                                <li>resultat = nb1 + nb2;</li>
+                                <li>resultat = nb1 - nb2;</li>
+                                <li>resultat = nb1 / nb2;</li>
+                                <li>resultat = nb1 * nb2;</li>
+                                <h4>Ne pas oublier d'initialiser les variables.</h4>
+                            </ul>
+                            <h4>- Le modulo</h4>
+                            <ul>
+                                <li>resultat = nb1 % nb2;</li>
+                                <h4>Le reste de la division.</h4>
+                            </ul>
+                            <h4>- Les écritures simplifiées : </h4>
+                            <ul>
+                                <li>nb1 = nb1 + 5;</li>
+                                <li>nb1 += 5;</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="new-inner-wrapper4">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les operateurs de comparaisons</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- == (verifie que la valeur de 2 variables identiques)</h4>
+                            <ul>
+                                <li>1 == 1 > vrai</li>
+                            </ul>
+                            <h4>- === (compare la valeur ET le type de 2 variables)</h4>
+                            <ul>
+                                <li>"1" == 1 > faux</li>
+                            </ul>
+                            <h4>- != (verifie que la valeur de 2 variables est differentes)</h4>
+                            <ul>
+                                <li>1 == 1 > faux</li>
+                            </ul>
+                            <h4>- !== (verifie que la valeur ou le type sont differents)</h4>
+                            <ul>
+                                <li>1 == "1" > vrai</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper4">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les operateurs logiques</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- L'operateur ET : && (nombre superieur ou egal a 1 ET inferieur ou egal a 3)</h4>
+                            <ul>
+                                <li>if ((nb >= 1) && (nb <= 3)) {}</li>
+                            </ul>
+                            <h4>- L'operateur OU : || (nombre inferieur a 1 ou superieur a 3)</h4>
+                            <ul>
+                                <li>if ((nb < 1) || (nb >3)) {}</li>
+                            </ul>
+                            <h4>- L'operateur NON, contraire de : !</h4>
+                            <h4>var pause = false;</h4>
+                            <ul>
+<pre><code>if (pause) {
+    console.log("Pause !");
+}
+if (!pause) {
+    console.log("Pas l'heure de la pause !");
+}</code></pre>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper4">
+                        <div class="sub-title">
+                            <h2 class="text-center">L'operateur Rest (...)</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>- Dans l'exemple ci-dessous l'operateur REST fait une copie l'index [3] du tableau associatif pour pouvoir modifier la valeur copier et NON la valeur du tableau </h4>
+                            <ul>
+<pre><code>let id = { ...tableauID[3] };
+id.key = nouvelle_valeur;</code></pre>
+                            </ul>
+                            <h4>- Dans cette exemple le Rest permet d'encapsuler le reste du tableau numerique dans une valeur, en l'occurence une valeur dans C et le reste dans D</h4>
+                            <ul>
+<pre><code>const tabNum2 = [1, 2 ,3];
+const[c, ...d] = tabNum;</code></pre>
+                            </ul>
+                        </div>
+                    </div>
+               </div> 
+            </div>
+        </div>
+
+
+        <div class="parallax cinq" id="section">
+            <div class="container-fluid">
+                <div class="bannertitle">
+                    <h1>Les Boucles</h1>
+                </div>
+                <div class="new-wrapper">
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les boucles "TANT QUE"</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>While</h4>
+                            <ul>
+                                <li>
+                                    <h5 class="fw-bold">Demande au moins une fois l'infos a l'utilisateur</h5>
+<pre><code>var i = 1;
+while (i <= 10) {
+    console.log(i + " boucle while fois");
+    i++;
+}</code></pre>
+                                </li>
+                            </ul>
+                            <h4>Do...While</h4>
+                            <ul>
+                                 <li>
+                                    <h5 class="fw-bold">Demande au moins une fois l'infos a l'utilisateur</h5>
+<pre><code>i = 1;
+do {
+    console.log(i + " do while fois");
+    i++;
+} while (i <= 10);
+</code></pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#onglet1" type="button" role="tab" aria-controls="onglet1" aria-selected="true">Les boucles "POUR"</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#onglet2" type="button" role="tab" aria-controls="onglet2" aria-selected="true">Exemple d'utilisation boucle for in/of</button>
+                                </li>
+                            </ul>
+                        
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="onglet1" role="tabpanel"><h4>For</h4>
+                            <ul>
+                                <li>
+                                    <h5 class="fw-bold">Quand ont connait a l'avance le nombre d'iteration</h5>
+<pre><code>for (var j = 1; j <= 10; j++) {
+    console.log(j + " for fois");
+}</code></pre>
+                                </li>
+                            </ul>
+                            <h4>For... In</h4>
+                            <ul>
+                                <li>
+                                    <h5 class="fw-bold">Pratique pour parcourir les cles d'un tableau associatif</h5>
+<pre><code>var contact = {
+    nom: "Cimiterra",
+    prenom: "Alexis",
+    tel: "0606904511",
+    email: "cimiterra.alexis@outlook.fr"
+};
+
+for (var key in contact) {
+    console.log(key + " : " + contact[key]);
+}</code></pre>
+                                </li> 
+                            </ul>
+                            <h4>For... Off</h4>
+                            <ul>
+                                <li>
+                                    <h5 class="fw-bold">Principalement pour parcourir les valeurs</h5>
+<pre><code>var names = ["Etienne", "Sebastien", "Clement", "Virginie"];
+
+for (var name of names) {
+    console.log(name);
+}</code></pre>
+                                </li>
+                            </ul></div>
+                            <div class="tab-pane fade" id="onglet2" role="tabpanel"><pre><code>var etudiants = [
+    {
+        prenom: "José",
+        nom: "Garcia",
+        matieres: {
+            francais: 15,
+            anglais: 5,
+            humour: 15
+        } 
+    },
+    {
+        prenom: "Antoine",
+        nom: "De Caunes",
+        matieres: {
+            francais: 15,
+            anglais: 5,
+            humour: 15,
+            informatique: 4,
+            sport: 10
+        }
+    }
+];
+
+var total = 0;
+var count = 0;
+
+for (var etudiant of etudiants) {
+    console.log(etudiant.nom + "  " + etudiant.prenom);
+
+    for (var matiere in etudiant.matieres) {
+        console.log(etudiant.matieres[matiere]);
+        total = etudiant.matieres[matiere] + total;
+        count++;
+    }
+
+    console.log(total / count);
+}</code></pre>
+</div>
+                        </div>
+                    </div>
+
+                    <div class="new-inner-wrapper">
+                        <div class="sub-title">
+                            <h2 class="text-center">Les boucles d'iteration</h2>
+                        </div>
+                        <div class="contenu">
+                            <h4>.ForEach()</h4>
+                            <ul>
+                                <li>
+                                    <h5 class="fw-bold">Fais quelque chose pour chaque element du tableau</h5>
+<pre><code>IDTableau.forEach(function(ID){
+    console.log(ID.name);
+})</code></pre>
+                                </li>
+                            </ul>
+                            <h4>.map()</h4>
+                            <ul>
+                                 <li>
+                                    <h5 class="fw-bold">Pour retourner l'element choisi du tableau</h5>
+<pre><code>const listID = IDTableau.map(function(ID) {
+    return ID.name;
+});</code></pre>
+                                </li>
+                            </ul>
+                            <h4>.find()</h4>
+                            <ul>
+                                 <li>
+                                    <h5 class="fw-bold">Pour chercher le premier element (Retourne un seul element)</h5>
+<pre><code>const ID = IDTableau.find(function(ID){
+    return vegetable.name.includes("ID_CHERCHER");
+});</code></pre>
+                                </li>
+                            </ul>
+                            <h4>.filter()</h4>
+                            <ul>
+                                 <li>
+                                    <h5 class="fw-bold">Trouver des elements (Retourne toujours une tableau)</h5>
+<pre><code>const IDS = IDTableau.filter(function(ID){
+    return vegetable.name.includes("ID_CHERCHER");
+});</code></pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax2 six" id="section">
+            <div class="container-fluid">
+                <div class="bannertitle">
+                    <h1>Les classes et heritage</h1>
+                </div>
+                <div class="new-wrapper">
+
+                    <div class="new-inner-wrapper4">
+                        <div class="sub-title">
+                            <h2 class="text-center">Classe et methode</h2>
+                        </div>
+                        <div class="contenu">
+
+                                <h4>Creation d'une classe : </h4>
+                                <ul>
+<pre><code>class className {
+    constructor(parameter1, parameter2){
+        this.parameter1 = parameter1;
+        this.parameter2 = parameter2;
+    }
+}</code></pre>
+                                </ul>
+                            
+                                <h4>Creation d'une methode : </h4>
+                                <ul>
+<pre><code>getParameter1-2(){
+        return `${this.parameter1} ${this.parameter2}`;
+    }</code></pre>
+                                </ul>
+                            </div>
+                        </div>
+                            
+                    <div class="new-inner-wrapper4">
+                        <div class="sub-title">
+                            <h2 class="text-center">Classe avec heritage</h2>
+                        </div>
+                        <div class="contenu">
+                                <h4>Creation d'une classe avec un heritage</h4>
+                                <ul>
+                                  <li><h5 class="fw-bold">Super sert à appeler les méthodes du parent, pas accéder aux propriétés.</h5></li>  
+<pre><code>class newClassName extends classHerited{
+    constructor(parameter1, parameter2, parameter3){
+        super(parameter1, parameter2);
+        this.parameter3 = parameter3;
+    }
+
+    getParameter3(){
+        return this.parameter3;
+    }
+
+    display(){
+        return `${super.getParameter1-2()} - ${this.parameter3()}`;
+    }
+}</code></pre>
+                                </ul>
+                            </div>
+                            </div>
+
+                            <div class="new-inner-wrapper4">
+                                <div class="sub-title">
+                                    <h2 class="text-center">Externalisation des fichiers</h2>
+                                </div>
+                                <div class="contenu">
+                                    <h4>Main.js</h4>
+                                    <ul>
+<pre><code>let voiture = new Voitures("Renault","Twingo",20000,2002,"non");
+let moto = new Motos("Kawasaki","ER6-N",22555,2012);</code></pre>
+                                    </ul>
+                                </div>
+                                <div class="contenu">
+                                    <h4>Vehicules.js</h4>
+                                    <ul>
+<pre><code>export default class Vehicules {
+constructor(marque, modele, kilometrage, annee) {
+    this.marque = marque;
+    this.modele = modele;
+    this.kilometrage = kilometrage;
+    this.annee = annee;
+}
+
+    display() {
+        return `${this.marque} - ${this.modele} 
+        ${this.kilometrage} - ${this.annee}`;
+    }
+}</code></pre>
+                                    </ul>
+                                </div>
+                                <div class="contenu">
+                                    <h4>Voitures.js</h4>
+                                    <ul>
+<pre><code>import Vehicules from './Vehicules.js';
+
+export default class Voiture extends Vehicules {
+    constructor(marque, modele, kilometrage, annee, clim = "oui") {
+        super(marque, modele, kilometrage, annee);
+        this.clim = clim;
+    }
+    
+    display() {
+        return `Voiture : ${super.display()} - ${this.clim}`;
+    }
+
+}</code></pre>
+                                    </ul>
+                                </div>
+                                <div class="contenu">
+                                    <h4>Motos.js</h4>
+                                    <ul>
+<pre><code>import Vehicules from './Vehicules.js';
+
+export default class Moto extends Vehicules {
+    display() {
+        return `Moto : ${super.display()}`;
+    }
+}</code></pre>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div> 
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

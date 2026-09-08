@@ -1,0 +1,7 @@
+Police de caractères :
+	Par défaut : Roboto (disponible sur Google Fonts)
+	Titres : Bebas (dispo dans le dossier fonts)
+    
+Couleurs :
+	Rouge : #ea222d
+	Couleur de l'ombre portée : #555555

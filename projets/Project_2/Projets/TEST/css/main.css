@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('../font/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('../font/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Kreon", serif;
+    font-size: 1.6rem;
+}
+
+#menu{
+    background-color: rgba(102, 100, 100, 0.781);
+    backdrop-filter: blur(3px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.125);
+}
+header .logo{
+    color: rgb(37, 37, 37);
+    font-size: 5rem;
+    padding-right: 0.2rem;
+}
+.navbar-brand {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: rgb(245, 91, 91);
+    padding-top: 0.8rem;
+    padding-bottom: 0;
+    font-family: 'league_spartanbold';
+}
+header .logo:hover,
+header .navbar-brand:hover{
+    color: white;
+    transition: all 0.5s;
+}
+
+.navbar-dark .navbar-nav > li > a {
+    transition: all 0.5s;
+    color: rgb(194, 190, 190);
+    font-weight: bold;
+    line-height: 2.5;
+    text-decoration: none;
+    padding:0rem 0.5rem 0rem 0.5rem;
+}
+
+li.nav-item {
+    margin: 0 1rem;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+header .nav-item:hover {
+    background-color:rgb(245, 91, 91);
+    transition: all 0.5s;
+}
+.navbar-dark .navbar-nav > li > a:hover{
+    color: white;
+}
+
+header {
+    background-image: url("../img/mtgbg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    position: relative;
+}
+
+
+
+header .banner-title h1{
+    font-size: 6rem;
+    color: rgba(255, 249, 249, 0.918);
+    border: 2px solid rgba(255, 255, 255, 0.125);
+    text-transform: uppercase;
+    background: #7a7a7a6b;
+    border-radius: 10px;
+    padding: 2.5rem 3rem;
+    backdrop-filter: blur(3px);
+    font-family: 'league_spartanbold';
+}
+
+header .bottom{
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 10rem;
+}
+
+header .bottom a{
+    color: rgba(253, 253, 253, 0.5)
+}
+
+header .bottom:hover{
+    animation-name: jumping;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes jumping {
+    0%{
+        bottom: 0.5rem;
+    }
+    100%{
+        bottom: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    header .banner-title h1 {
+        font-size: 5rem;
+    }
+    header .navbar-brand{
+        z-index: -1000;
+        color: rgba(250, 235, 215, 0);
+    }
+
+    header .navbar-brand:hover{
+        color: rgba(240, 248, 255, 0);
+    }
+}
+
+@media (max-width: 767px) {
+    header .banner-title h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    header .banner-title h1 {
+        font-size: 4rem;
+    }
+}
+
+
+/*PART COMMANDERS*/
+.parallax{
+    background-color: rgb(255, 240, 196);
+}
+
+#commander .col-wrapper{
+    padding: 0rem 3rem 6rem 3rem;
+}
+
+#commander .frame{
+    border: 3px solid rgba(255, 255, 255, 0.822);
+    position: relative;
+}
+
+.commanders{
+    display: flex;
+    justify-content: center;
+}
+
+#commander h2{
+    font-family: 'league_spartanbold';
+    font-weight: bold;
+    padding: 8rem 0rem 8rem 0rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: rgba(87, 87, 87, 0.57) 5px 5px 13px;
+}
+
+#commander h3{
+    text-align: center;
+    color: rgb(245, 91, 91);
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+#commander p{
+    text-align: center;
+}
+
+#commander .frame{
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(87, 87, 87, 0.57) 6px 5px 6px;
+}
+#commander img{
+    transition: all 0.5s;
+    border-radius: 5px;
+    
+}
+#commander figcaption{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateX(-10rem);
+}
+
+#commander .mana{
+    font-size: 2.5rem;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+
+#commander .manaG{
+    color: rgb(7, 126, 42);
+}
+
+#commander .manaBl{
+    color: rgb(34, 131, 223);
+}
+
+#commander .manaR{
+    color: rgb(235, 57, 57);
+}
+
+#commander .manaB{
+    color: rgb(10, 10, 10);
+}
+
+#commander .frame:hover img{
+    transform: scale(1.1);
+    filter:brightness(60%)
+}
+
+#commander .frame:hover figcaption{
+    opacity: 1;
+    transform: translateX(0rem);
+}
+
+
+/*SECTION The rot Farm*/
+
+.parallax2{ /*REGLAGE BACKGROUND*/
+    background-image: url(../img/mtgbgred.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 90vh;
+}
+
+.parallax3{
+    background-image: url(../img/mtgbggreen.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 90vh;
+}
+
+.parallax4{
+    background-image: url(../img/mtgbgblue.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 90vh;
+}
+
+.commander1 h2{ /*REGLAGE TITRE*/
+    font-family: 'league_spartanbold';
+    font-weight: bold;
+    padding: 8rem 0rem 7rem 0rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: rgba(34, 34, 34, 0.884) 8px 8px 5px;
+    color:white;
+}
+
+.commander1 img{ /*CADRE DU COMMANDER*/
+    border: 10px solid rgba(0, 0, 0, 0.66);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+} 
+
+.commander1 .commander-wrapper{ /*PADDING DU COMMANDER*/
+    padding-bottom: 5rem;
+}
+
+.commander1 .cardcommander-wrapper{ /*PARTAGE L'ESPACE DU CONTAINER FLUID ENTRE LE CONTAINER COMMANDER ET LE CONTAINER CARTE  */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.commander1 .card-list{ /*PADDING DU CONTAINER DES CARTES*/
+    padding-bottom: 15rem;
+}
+
+.commander1 .cards1,
+.commander1 .cards{ /*PADDING DES SOUS LISTE DES CARTES*/
+    padding-top: 2rem;
+}
+
+.nav-tabs .nav-item{ /*RETIRE LE MARGIN DES ONGLETS "TITRE"*/
+    margin:0;
+    
+}
+
+.commander1 .nav-tabs{ /*RETIRE LA BORDURE RESTANTE*/
+    border:none;
+}
+
+.commander1 .nav-link,
+.commander1 .cards1 li,
+.commander1 .cards li{ /*CHANGE LA COULEUR DU NOMS DE TOUTES LES CARTES ET DES TITRE ONGLET*/
+    color: rgb(255, 255, 255);
+}
+
+.commander1 .tab-content{ /*CONFIG STYLE DE L'INTERIEUR DE L'ONGLET*/
+    background-color:#7a7a7a6b;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255,255,255,0.125);
+    border-radius: 0px 0px 5px 5px;
+    border-top: none;
+}
+
+.commander1 .nav-link:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgba(253, 253, 253, 0.571);
+    border: 1px solid rgba(253, 253, 253, 0.571);
+    transition: all 0.5s;
+}
+
+.commander1 .nav-tabs .nav-link.active{ /*CHANGE LE STYLE DE L'ONGLET ACTIF*/
+    border: 2px solid rgba(255,255,255,0.125);
+    background-color:#7a7a7a6b;
+    backdrop-filter: blur(3px);
+    border-bottom: 2px solid #7a7a7a41;;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+@media (max-width: 575px) {
+    .commander1 button{
+        padding-right: 0.4rem;
+        padding-left:0.4rem;
+        font-size: 1.52rem;
+    }
+
+    .commander1 .cards{
+        padding-top: 0;  
+    }
+}
+
+@media (max-width: 991px){
+    .commander1 .card-list{
+        padding:2rem
+    }
+}
+
+
+/*SECTION STAT*/
+
+
+#stats .red{
+    font-size: 3.5rem;
+    color: rgb(245, 91, 91);
+    font-weight: bolder;
+    text-transform:uppercase;
+    font-family: 'league_spartanbold';
+}
+
+#stats .green{
+    font-size: 3.5rem;
+    color: #286730;
+    font-weight: bolder;
+    text-transform:uppercase;
+    font-family: 'league_spartanbold';
+}
+
+#stats .blue{
+    font-size: 3.5rem;
+    color: #4786DD;
+    font-weight: bolder;
+    text-transform:uppercase;
+    font-family: 'league_spartanbold';
+}
+
+
+#stats i{
+    font-size: 3rem;
+    text-shadow: rgba(87, 87, 87, 0.57) 5px 5px 13px;
+    padding-top: 1rem;
+}
+
+#stats .container{
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+}
+
+
+
+
+
+   
+
+
+
+
+

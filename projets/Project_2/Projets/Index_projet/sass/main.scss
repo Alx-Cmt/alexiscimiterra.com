@@ -1,0 +1,322 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "reset";
+@font-face {
+    font-family: 'league_spartanbold';
+    src: url('../font/leaguespartan-bold-webfont.woff2') format('woff2'),
+         url('../font/leaguespartan-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+
+    a{
+        padding: 1rem;
+        color: white;
+        font-size: 1.8rem;
+        @include m.hover(v.$color-four)
+    }
+    .nav-item > .nav-link{
+        padding: 1rem;
+        color: white;
+        font-size: 1.8rem;
+        @include m.hover(v.$color-four);
+    }
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: v.$color-two;
+        min-width: 160px;
+        z-index: 1000;
+        display: none;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .navbar{
+    background-color: v.$color-three;
+    font-size: 2rem;
+
+        .navbar-brand{
+            color: v.$color-one;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-family: 'league_spartanbold';
+        }
+    }
+}
+
+.parallax{
+    background-color: v.$color-one;
+    min-height: 40rem;
+}
+
+.parallax2{
+    background-color: v.$color-four;
+    min-height: 30rem;
+}
+
+.bannertitle{
+    text-align: center;
+}
+
+h1{
+    @include m.titresection;
+}
+
+.wrapper{
+    @include m.centrageHV($paddingB:5rem);
+
+    .element{
+        padding:1rem;
+    }
+}
+
+figcaption{
+    @include m.figparameter(-10rem,0rem,'.frame1',white,$bottom:1rem,$left:1.5rem);
+}
+
+.frame{
+    position:relative;
+    overflow: hidden;
+}
+
+.frame1 img{
+    @include m.hoverdark;
+}
+
+.frame2{
+    background-color: rgb(34, 114, 206);
+    @include m.animationcolor(color,rgb(34, 114, 206),rgb(39, 133, 39),#7B4BD0,#F25F4B,3s);
+}
+
+.frame3{
+    @include m.beating(beating,0.3s);
+}
+
+.nav-item > .nav-link{
+    @include m.hoverbtn(black,white,v.$color-three);
+}
+
+.nav-tabs .nav-link.active,
+.nav-pills .nav-link.active{
+    background-color: v.$color-two;
+    border-color:v.$color-two;
+    color: white;
+}
+
+.nav-pills{
+    padding-bottom: 0.5rem;
+}
+.dropdown-menu .nav-link{
+    font-size: 1.3rem;
+    border-radius: 0px;
+    @include m.hoverbtn(black,white,v.$color-three);
+}
+
+.tab-content{
+    background-color: v.$color-two;
+    padding:1rem 2rem 1rem 2rem;
+    border-radius:0px 0px 3px 3px;
+    
+    &.is-pills {
+        border-radius: 3px;
+    }
+}
+
+.nav-tabs{
+    border-color:v.$color-two;
+}
+
+.half{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-inner{
+    flex-basis:45%;
+}
+
+#carousel-wrapper{
+    padding-bottom: 5rem;
+    max-height: 60rem;
+    max-width: 80rem;
+}
+
+.wrapper-test{
+    @include m.centrageHV;
+}
+
+
+
+
+
+
+
+/*TEST POUR PAGE 2 PLUS PROPRE*/
+
+.container-fluid{
+    width: 80%;
+}
+
+.new-wrapper{
+    @include m.centrageH($paddingB:3rem);
+    justify-content: center;
+}
+
+thead{
+    @include m.subtitle(black,black);
+}
+
+#section{
+
+    ul{
+        margin-bottom:2.5rem;
+    }
+
+    li{
+        font-size: 1.5rem;
+    }
+
+    tr.un {
+        background-color: v.$color-two;
+    }   
+
+    h2{
+    @include m.subtitle(black,black);
+    font-weight: bold;
+    }
+
+    h4{
+    font-weight: bold;
+    }
+}
+
+.new-inner-wrapper{
+    @include m.wrapper(30%, 1rem, v.$color-four, 8px, $margin: 1.5rem);
+    //height: 100%;
+}
+
+.new-inner-wrapper2{
+    @include m.wrapper(47%, 1rem, v.$color-one, 8px, $marginT: 2rem, $marginB: 2rem);
+    //height: 100%;
+}
+
+.new-inner-wrapper2-5{
+    @include m.wrapper(100%, 1rem, v.$color-one, 8px, $marginT: 2rem, $marginB: 2rem);
+}
+    
+.new-inner-wrapper3{
+    @include m.wrapper(100%, 1rem, v.$color-four, 8px, $marginT: 2rem, $marginB: 2rem);
+}
+
+.new-inner-wrapper4{
+    @include m.wrapper(30%, 1rem, v.$color-one, 8px, $margin: 1.5rem);
+    //height: 100%;
+}
+
+.new-inner-wrapper5{
+    @include m.wrapper(30%, 1rem, v.$color-four, 8px, $margin: 1.5rem);
+    height: 100%;
+}
+
+.tableau{
+ @include m.centrageH;
+}
+
+.deux{ 
+    table{
+        @include m.wrapper(100%, 0rem, v.$color-one, 8px);
+    }
+
+    .inner-block{
+        flex-basis: 47%;
+    }
+}
+
+.trois table {
+    @include m.wrapper(100%, 0rem, v.$color-four, 8px);
+}
+
+
+.cinq{
+    .nav-link{
+        color: #7d8f96;
+        font-weight: bold;
+        font-size: 1.6rem;
+        &:hover{
+            background-color: transparent;
+            color: #394347;
+        }
+    }
+    .nav-link.active{
+        background-color: transparent;
+        border-color:transparent;
+        color: black;
+    }
+    .tab-content{
+        background-color: transparent;
+        padding: 0;
+    }
+    .nav-tabs{
+    border-color:black;
+    }
+    .nav-link{
+        padding: 0 2rem 0 0;
+    }
+    h4{
+        @include m.petitcontour(black,white);
+    }
+}
+
+.six{
+    h4{
+        @include m.petitcontour(black,white);
+    }
+}
+
+@media (max-width: v.$breakpoint-xl) {
+    .new-inner-wrapper{
+        flex-basis:40%;
+    }
+
+    .half{
+        padding-bottom: 5rem;
+    }
+
+    .block{
+        flex-direction: column;
+    }
+    .new-inner-wrapper4{
+        flex-basis: 60%;
+    }
+}
+
+@media (max-width: v.$breakpoint-lg) {
+    .half{
+        flex-direction: column;
+    }
+
+    .new-inner-wrapper{
+        flex-basis:80%;
+    }
+
+}
+
+@media (max-width: v.$breakpoint-ph) {
+    .new-inner-wrapper2{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+

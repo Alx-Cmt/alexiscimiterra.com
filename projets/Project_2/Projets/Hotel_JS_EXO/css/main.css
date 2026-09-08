@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+}
+
+.container-fluid {
+  width: 90%;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+.form-control {
+  height: 3rem;
+  border-radius: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#menu {
+  background-color: #333333;
+  min-height: 8rem;
+}
+
+#menu img {
+  width: 30rem;
+  height: auto;
+}
+#menu a {
+  color: white;
+  padding: 1rem;
+}
+
+.un {
+  background-image: url("../img/Lille-Seminaires.jpg");
+}
+
+.deux {
+  background-image: url("../img/Lille-Hall.jpg");
+}
+
+.parallax {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.parallax .container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.parallax .title {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.719);
+  padding: 1.5rem;
+}
+.parallax .title::after {
+  position: absolute;
+  content: " ";
+  background: #B99674;
+  width: 8rem;
+  height: 0.2rem;
+  margin: -4rem;
+  top: 115%;
+  right: 50%;
+}
+.parallax h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4rem;
+  color: #2F2F2F;
+  padding-bottom: 3rem;
+}
+
+.section {
+  background-color: rgb(255, 255, 255);
+  height: 30vh;
+  color: white;
+}
+.section .container-fluid {
+  background-color: #2F2F2F;
+  width: 90%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section .block {
+  padding: 1rem;
+}
+.section .block.a {
+  flex-basis: 20%;
+}
+.section .block.b {
+  flex-basis: 10%;
+}
+
+button {
+  display: inline-block;
+  transition: all 0.5s;
+  background-color: #B99470;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+button:hover {
+  color: #B99470;
+  background-color: white;
+}
+button {
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+button h6 {
+  font-size: 2rem;
+}
+
+.invoice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #B99470;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.invoice.show {
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  #menu img {
+    width: 40%;
+  }
+  #menu a {
+    font-size: 1rem;
+    padding: 0.1rem;
+  }
+  .parallax {
+    height: 40vh;
+  }
+  .parallax h1 {
+    font-size: 3rem;
+  }
+  .section {
+    height: 60vh;
+  }
+  .section .container-fluid {
+    padding: 1rem;
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .section .block {
+    padding: 1rem;
+    width: 100%;
+    padding: 0rem;
+  }
+  .section .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
