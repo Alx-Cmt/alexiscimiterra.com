@@ -1,0 +1,539 @@
+@font-face {
+  font-family: "MabryPro-Regular";
+  src: url("../fonts/MabryPro-Regular.woff2") format("woff2"), url("../fonts/MabryPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MabryPro-Medium";
+  src: url("../fonts/MabryPro-Medium.woff2") format("woff2"), url("../fonts/MabryPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MabryPro-Light";
+  src: url("../fonts/MabryPro-Light.woff2") format("woff2"), url("../fonts/MabryPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MabryPro-Bold";
+  src: url("../fonts/MabryPro-Bold.woff2") format("woff2"), url("../fonts/MabryPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MabryPro-Black";
+  src: url("../fonts/MabryPro-Black.woff2") format("woff2"), url("../fonts/MabryPro-Black.woff") format("woff");
+  font-weight: 1000;
+  font-display: swap;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 2rem 4rem;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 2rem;
+  }
+}
+
+.error {
+  background-color: #3a68ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23202021' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: #f8f8f8;
+}
+.error h1 {
+  font-family: "MabryPro-Black";
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+.error i {
+  padding-right: 3rem;
+}
+
+.container {
+  border: 4px solid #000000;
+  box-shadow: 10px 12px 0px #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  border: 4px solid #000000;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  height: 9vh;
+  align-items: center;
+  border-bottom: 7px solid #000000;
+}
+header .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+header .burger span {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: #FFDC8B;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+header .burger.active span:nth-child(1) {
+  transform: translateY(20px) rotate(45deg);
+}
+header .burger.active span:nth-child(2) {
+  opacity: 0;
+}
+header .burger.active span:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+header h1 {
+  padding: 0 10px;
+  font-family: "MabryPro-bold";
+  font-size: clamp(1.2rem, 3vh, 5rem);
+}
+header .titre {
+  border-right: 4px solid #000000;
+  background-color: #FFDC8B;
+  height: 100%;
+  width: 18%;
+  min-width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .buttons {
+  display: flex;
+  gap: 1rem;
+  font-family: "MabryPro-bold";
+  text-transform: uppercase;
+  justify-content: center;
+  width: 90%;
+}
+header .buttons a {
+  color: #000000;
+  font-size: clamp(1rem, 2vh, 5rem);
+}
+@media (max-width: 991px) {
+  header .buttons a {
+    font-size: clamp(1px, 1.5vh, 13px);
+  }
+}
+@media (max-width: 767px) {
+  header .titre {
+    width: 90%;
+  }
+  header .container-burger {
+    height: 100%;
+    width: 60%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  header .burger {
+    display: flex;
+  }
+  header .buttons {
+    position: absolute;
+    top: 9.5vh;
+    left: 30;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #FFDC8B;
+    transition: height 0.3s ease;
+    border-bottom: 3px solid #000000;
+  }
+  header .buttons.open {
+    height: 21vh;
+  }
+  header .buttons a {
+    padding: 0px 10px;
+    font-size: 1rem;
+  }
+}
+
+.buttons a.active {
+  color: #f7cb46;
+}
+
+.moi {
+  border-bottom: 4px solid #000000;
+}
+.moi .inner-container {
+  display: flex;
+  height: 70vh;
+}
+.moi .presentation {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  border-right: 4px solid #000000;
+  background-color: #f8f8f8;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a1a1a1' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.moi .presentation .block {
+  padding: 2rem 8rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 1199px) {
+  .moi .presentation .block {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+}
+.moi .presentation h2 {
+  font-family: "MabryPro-bold";
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 2vh, 5rem);
+}
+.moi .presentation .details i {
+  margin-right: 10px;
+}
+.moi .presentation .details span {
+  font-family: "MabryPro-regular";
+  background-color: #99e885;
+  padding: 8px;
+  margin-right: 15px;
+  font-size: clamp(1.2rem, 2vh, 5rem);
+}
+@media (max-width: 767px) {
+  .moi .presentation .details span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1400px) {
+  .moi .presentation .details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.moi .presentation h1 {
+  font-family: "MabryPro-black";
+  font-size: clamp(4rem, 8vh, 7rem);
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+.moi .presentation p {
+  font-family: "MabryPro-regular";
+  font-size: clamp(1.2rem, 2vh, 5rem);
+}
+@media (max-width: 1400px) {
+  .moi .presentation p {
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  .moi .presentation h1 {
+    font-size: clamp(3rem, 2vh, 5rem);
+  }
+  .moi .presentation p {
+    font-size: clamp(10px, 2vh, 1rem);
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .moi .presentation p {
+    font-size: clamp(10px, 1.5vh, 1rem);
+    margin: 0;
+  }
+}
+.moi .presentation .icons {
+  display: flex;
+  gap: 1rem;
+}
+.moi .presentation .icons i {
+  font-size: clamp(2rem, 3vh, 5rem);
+  color: #000000;
+  background-color: #f8f8f8;
+  padding: 0.4rem;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+}
+.moi .presentation .icons i:hover {
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 0px black;
+  transform: translate(2px, 2px);
+}
+.moi .photo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e885;
+}
+.moi .photo .block {
+  display: flex;
+  justify-content: center;
+}
+.moi .photo .cadre {
+  width: 60%;
+}
+.moi .photo img {
+  box-shadow: 12px 12px 0px #70aa61;
+}
+
+.outils {
+  height: auto;
+  border-bottom: 4px solid #000000;
+}
+@media (max-width: 767px) {
+  .outils {
+    height: 40vh;
+  }
+}
+.outils .inner-container {
+  height: 100%;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .outils .inner-container {
+    flex-direction: column;
+  }
+}
+.outils .title {
+  height: auto;
+  width: 11%;
+  min-height: 12rem;
+  min-width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF7E9D;
+  border-right: 4px solid #000000;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .outils .title {
+    width: 96%;
+    height: 30%;
+    min-height: auto;
+    align-items: start;
+    padding-left: 1rem;
+    border-bottom: 4px solid #000000;
+  }
+}
+.outils .title h1 {
+  font-family: "MabryPro-black";
+  font-size: clamp(2rem, 2vh, 3rem);
+  text-transform: uppercase;
+  color: #f8f8f8;
+}
+.outils .title i {
+  font-size: 2rem;
+  color: #f8f8f8;
+}
+.outils .blocks {
+  display: flex;
+  height: auto;
+  width: 90%;
+  gap: 3rem;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .outils .blocks {
+    justify-content: center;
+  }
+}
+.outils .block {
+  display: flex;
+  width: 10%;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.outils .block i {
+  font-size: clamp(3rem, 5vh, 6rem);
+}
+.outils .block span {
+  font-family: "MabryPro-bold";
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vh, 3rem);
+}
+@media (max-width: 767px) {
+  .outils .block span {
+    font-size: 12px;
+  }
+}
+
+.projets .inner-container {
+  padding: 2rem 3rem;
+}
+.projets h1 {
+  font-family: "MabryPro-black";
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.projets .btn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.projets .btn .fleche {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.projets .btn .fleche i {
+  background-color: #b29bf8;
+  padding: 0.8rem 1rem;
+  border: 3px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
+}
+.projets .btn .fleche i:hover {
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 0px black;
+  transform: translate(2px, 2px);
+}
+@media (max-width: 767px) {
+  .projets .btn {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .projets .btn .fleche {
+    justify-content: center;
+  }
+}
+.projets .btn-projet {
+  font-family: "MabryPro-bold";
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 3px solid #000000;
+  padding: 0.5rem 1rem;
+  box-shadow: 6px 6px 0px #000000;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.projets .btn-projet:hover {
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 0px black;
+  transform: translate(2px, 2px);
+}
+.projets .btn-projet a {
+  color: #000000;
+}
+.projets .btn-projet i {
+  margin-left: 0.5rem;
+}
+.projets .carousel {
+  transition: all 0.5s ease;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.projets .carousel .cadre {
+  width: 80%;
+}
+@media (max-width: 991px) {
+  .projets .carousel {
+    display: flex !important;
+  }
+}
+.projets .slides {
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  border: 4px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  overflow: hidden;
+}
+.projets .slides .description {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234a4a4a' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.projets .slides .description h1 {
+  font-size: 23px;
+}
+.projets .slides .description span {
+  font-size: 14px;
+  background-color: #f8f8f8;
+  border: 3px solid #000000;
+  padding: 5px 10px;
+}
+.projets .slides .description p {
+  font-family: "MabryPro-Light";
+  font-size: 14px;
+  margin: 10px 0 0 0;
+}
+.projets .slides .description .tech {
+  margin: 15px 0;
+}
+.projets .slides .description .btn-projet {
+  display: inline-block;
+  font-size: 15px;
+}
+@media (max-width: 991px) {
+  .projets .slides {
+    display: none;
+    width: 100%;
+  }
+  .projets .slides.mobile-active {
+    display: flex;
+  }
+}
+.projets .image {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-bottom: 4px solid #000000;
+  background-color: #b29bf8;
+}
+.projets .dots-container {
+  margin-top: 1.5rem;
+  display: flex;
+  align-self: center;
+}
+@media (max-width: 991px) {
+  .projets .dots-container {
+    margin: 0;
+  }
+}
+.projets .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border: 3px solid #000000;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+.projets .active, .projets .dot:hover {
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */

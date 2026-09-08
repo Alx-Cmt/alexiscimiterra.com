@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="titre">
+                <h1>Alexis Cimiterra</h1>
+            </div>
+            <div class="container-burger">
+                <button class="burger" id="burger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="buttons">
+                <a href="#moi" class="active">A propos de moi</a>
+                <a href="#outils">Outils</a>
+                <a href="#projets">Mes projets</a>
+                <a href="#contact">Me Contacter</a>
+                <a>English</a>
+            </div>
+        </header>
+    
+
+        <section class="moi" id="moi">
+            <div class="inner-container">
+
+                <div class="presentation">
+                    <div class="block">
+                        <h1>A propos de moi</h1>
+                        <p>Fraîchement reconverti dans le domaine du développement web,
+                            je suis actuellement à la recherche d’un poste dans lequel je pourrais pleinement m’épanouir et développer mes compétences dans ce domaine. 
+                            J’ai une affection toute particulière pour le développement front-end et la création de sites vitrines, 
+                            mais cela ne m’empêche pas de travailler également sur la partie back-end.</p>
+                        <div class="details">
+                            <span><i class="fa-solid fa-location-dot"></i>Bayonne, France</span>
+                            <span><i class="fa-solid fa-briefcase"></i>Developpeur web junior - FullStack</span>
+                        </div>
+                        <div class="liens">
+                            <h2>Retrouvez-moi sur :</h2>
+                            <div class="icons">
+                                <a href="https://www.linkedin.com/in/alexis-cimiterra-9134032a6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/Alx-Cmt" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo">
+                    <div class="block">
+                        <div class="cadre">
+                            <img src="./img/photo.png"/>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="outils" id="outils">
+            <div class="inner-container">
+                <div class="title">
+                    <h1>Outils</h1>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="blocks">
+                    <div class="block">
+                        <div class="icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <span>Hmtl</span>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <span>Css</span>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <i class="fa-brands fa-php"></i>
+                        </div>
+                        <span>Php</span>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <span>Sql</span>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <span>Boostrap</span>
+                    </div>
+                    <div class="block">
+                        <div class="icon">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projets" id="projets">
+            <div class="inner-container">
+                <h1>Mes projets</h1>
+                <div class="btn">
+                    <div class="btn-projet">
+                        <a class="projet" href="./notfound.html">Voir tout les projet <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="fleche">
+                        <a class="prev"><i class="fa-solid fa-chevron-left"></i></a>
+                        <a class="next"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="image">
+                            <div class="cadre">
+                                <img src="./img/food_planing.png">
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h1>Planning de repas<h1>
+                            <p>Une application web de planning de repas entièrement réalisée avec React.
+                                L’application permet de planifier les repas du mois à partir d’une sélection de menus préenregistrés et de générer automatiquement une liste de courses.
+                                Il est également possible d’ajouter de nouveaux plats à l’application.
+                            </p>
+                            <div class="tech">
+                                <span>html</span>
+                                <span>sass</span>
+                                <span>react</span>
+                            </div>
+                            <div class="btn-projet">
+                                <a class="projet" href="https://food-planning-one.vercel.app/" target="_blank">Voir le projet <i class="fa-solid fa-arrow-right"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slides">
+                        <div class="image">
+                            <div class="cadre">
+                                <img src="./img/Portfolio.png">
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h1>Portfolio<h1>
+                            <p>Mon tout premier portfolio. Je m’étais mis comme défi de ne pas utiliser JavaScript afin de creuser, d’expérimenter et de trouver des moyens d’aboutir à un projet concret uniquement avec HTML et CSS.</p>
+                            <div class="tech">
+                                <span>html</span>
+                                <span>sass</span>
+                            </div>
+                            <div class="btn-projet">
+                                <a class="projet" href="./projets/Project_2/index.html" target="_blank">Voir le projet<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slides">
+                        <div class="image">
+                            <div class="cadre">
+                                <img src="./img/projet_star.png">
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h1>Projet Star-Wars<h1>
+                            <p>Un exercice au cours duquel il m’était demandé de créer un « jeu » au tour par tour, en récupérant les caractéristiques de chaque personnage directement depuis un fichier JSON et en utilisant la programmation orientée objet.</p>
+                            <div class="tech">
+                                <span>php</span>
+                                <span>sass</span>
+                            </div>
+                            <div class="btn-projet">
+                                <a class="projet" href="https://exostarwars.page.gd/Starter_StarWars_EXO/" target="_blank">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="image">
+                            <div class="cadre">
+                                <img src="./img/telefoot.png">
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h1>Telefoot<h1>
+                            <p>Un devoir dans lequel je devais recréer une page d’accueil inspirée de Téléfoot, tout en mettant en place un système de gestion des utilisateurs.
+                                L’application permettait notamment de créer un compte, de se connecter, de gérer sa session et de modifier son mot de passe.</p>
+                            <div class="tech">
+                                <span>php</span>
+                                <span>sass</span>
+                                <span>sql</span>
+                            </div>
+                            <div class="btn-projet">
+                                <a class="projet" href="https://telefootprojet.kesug.com/" target="_blank">Voir le projet<i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dots-container" style="text-align:center"></div>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+<script type="module" src="./js/main.js"></script>
+</html>
