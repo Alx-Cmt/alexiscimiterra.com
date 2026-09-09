@@ -463,6 +463,14 @@ header{
         padding: 2rem 0 ;
         border-bottom: 4px solid v.$couleur-noir;
         background-color:v.$couleur-violet;
+        img{
+            transition: all 0.3s ease;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                @include m.liftBtn;
+            }
+        }
     }
     .dots-container{
         margin-top: 1.5rem;

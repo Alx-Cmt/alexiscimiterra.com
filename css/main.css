@@ -512,6 +512,16 @@ header .buttons a {
   border-bottom: 4px solid #000000;
   background-color: #b29bf8;
 }
+.projets .image img {
+  transition: all 0.3s ease;
+}
+.projets .image img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+  box-shadow: 8px 8px 0px #896cdf;
+  transform: translate(-2px, -2px);
+}
 .projets .dots-container {
   margin-top: 1.5rem;
   display: flex;

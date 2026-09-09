@@ -3,3 +3,9 @@
     box-shadow: 0px 0px 0px black;
     transform: translate(2px, 2px);
 }
+
+@mixin liftBtn{
+    transition: all 0.2s ease;
+    box-shadow: 8px 8px 0px #896cdf;
+    transform: translate(-2px, -2px);
+}
